@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bx7tjc8k10s00"]
+
+[ext_resource type="Script" uid="uid://jfxlefej1tvn" path="res://ui/screens/training_screen.gd" id="1_7o72i"]
+
+[node name="TrainingScreen" type="Control" unique_id=296661209]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7o72i")
+
+[node name="Background" type="ColorRect" parent="." unique_id=537526540]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="." unique_id=1248932334]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = 20.0
+offset_right = -30.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="MainVBox" unique_id=1237470062]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MainVBox/Header" unique_id=1570229785]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "ЦЕНТР ПОДГОТОВКИ"
+
+[node name="RoomBonus" type="Label" parent="MainVBox/Header" unique_id=759292139]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+text = "Бонус базы: +0%"
+
+[node name="BackButton" type="Button" parent="MainVBox/Header" unique_id=1664613447]
+custom_minimum_size = Vector2(120, 36)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="ContentHBox" type="HBoxContainer" parent="MainVBox" unique_id=1809465695]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="TypesPanel" type="VBoxContainer" parent="MainVBox/ContentHBox" unique_id=2072841021]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="MainVBox/ContentHBox/TypesPanel" unique_id=982815464]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ПРОГРАММА"
+
+[node name="TrainingList" type="VBoxContainer" parent="MainVBox/ContentHBox/TypesPanel" unique_id=883791849]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="RosterPanel" type="VBoxContainer" parent="MainVBox/ContentHBox" unique_id=1756228062]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="MainVBox/ContentHBox/RosterPanel" unique_id=119642534]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ВЫБОР ИГРОКОВ"
+
+[node name="Scroll" type="ScrollContainer" parent="MainVBox/ContentHBox/RosterPanel" unique_id=2023313916]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="PlayerList" type="VBoxContainer" parent="MainVBox/ContentHBox/RosterPanel/Scroll" unique_id=773185681]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="PreviewPanel" type="PanelContainer" parent="MainVBox/ContentHBox" unique_id=269060219]
+custom_minimum_size = Vector2(320, 0)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="MainVBox/ContentHBox/PreviewPanel" unique_id=1954147870]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBox" type="VBoxContainer" parent="MainVBox/ContentHBox/PreviewPanel/Margin" unique_id=449690060]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="MainVBox/ContentHBox/PreviewPanel/Margin/VBox" unique_id=1783576174]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+text = "ПРОГНОЗ РОСТА"
+horizontal_alignment = 1
+
+[node name="PreviewScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/PreviewPanel/Margin/VBox" unique_id=364065508]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="PreviewList" type="VBoxContainer" parent="MainVBox/ContentHBox/PreviewPanel/Margin/VBox/PreviewScroll" unique_id=1528065354]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TrainButton" type="Button" parent="MainVBox/ContentHBox/PreviewPanel/Margin/VBox" unique_id=2016266330]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "НАЧАТЬ ТРЕНИРОВКУ"
+
+[connection signal="pressed" from="MainVBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MainVBox/ContentHBox/PreviewPanel/Margin/VBox/TrainButton" to="." method="_on_train_pressed"]

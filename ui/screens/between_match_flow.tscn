@@ -1,0 +1,125 @@
+[gd_scene format=3 uid="uid://c1g88nw1kgh8v"]
+
+[ext_resource type="Script" uid="uid://bfwc2sojjrhig" path="res://ui/screens/between_match_flow.gd" id="1_ccjxw"]
+
+[node name="BetweenMatchFlow" type="Control" unique_id=12137760]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ccjxw")
+
+[node name="Background" type="ColorRect" parent="." unique_id=446197842]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.1, 0.14, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="." unique_id=169719665]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 40
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea" unique_id=1827361718]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="VBoxContainer" parent="SafeArea/MainVBox" unique_id=1132326343]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/Header" unique_id=511392055]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "МЕЖДУ МАТЧАМИ"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="RichTextLabel" parent="SafeArea/MainVBox/Header" unique_id=2024462020]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/normal_font_size = 14
+bbcode_enabled = true
+text = "[center]Результат -> Ивент -> Финансы -> Подготовка[/center]"
+fit_content = true
+
+[node name="PhasesContainer" type="Control" parent="SafeArea/MainVBox" unique_id=438799443]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Center" type="CenterContainer" parent="SafeArea/MainVBox/PhasesContainer" unique_id=1290674674]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PhasePanel" type="PanelContainer" parent="SafeArea/MainVBox/PhasesContainer/Center" unique_id=133494185]
+custom_minimum_size = Vector2(500, 350)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="SafeArea/MainVBox/PhasesContainer/Center/PhasePanel" unique_id=605052700]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="PhaseVBox" type="VBoxContainer" parent="SafeArea/MainVBox/PhasesContainer/Center/PhasePanel/Margin" unique_id=1013413960]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="PhaseTitle" type="Label" parent="SafeArea/MainVBox/PhasesContainer/Center/PhasePanel/Margin/PhaseVBox" unique_id=1025275179]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "РЕЗУЛЬТАТ"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SafeArea/MainVBox/PhasesContainer/Center/PhasePanel/Margin/PhaseVBox" unique_id=24812820]
+layout_mode = 2
+
+[node name="PhaseBody" type="RichTextLabel" parent="SafeArea/MainVBox/PhasesContainer/Center/PhasePanel/Margin/PhaseVBox" unique_id=698665679]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+
+[node name="Footer" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=328632755]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="SkipButton" type="Button" parent="SafeArea/MainVBox/Footer" unique_id=1105144660]
+custom_minimum_size = Vector2(170, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "ПРОПУСТИТЬ ВСЕ"
+
+[node name="NextButton" type="Button" parent="SafeArea/MainVBox/Footer" unique_id=1586087737]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "ДАЛЕЕ"
+
+[node name="TransitionOverlay" type="ColorRect" parent="." unique_id=2031201573]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/SkipButton" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/NextButton" to="." method="_on_next_pressed"]

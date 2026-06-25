@@ -1,0 +1,221 @@
+[gd_scene format=3 uid="uid://bdpsjopp601rn"]
+
+[ext_resource type="Script" path="res://ui/screens/base_screen.gd" id="1_fuf8c"]
+
+[node name="BaseScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fuf8c")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TopBar" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+
+[node name="TitleVBox" type="VBoxContainer" parent="SafeArea/MainVBox/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/TopBar/TitleVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "ШТАБ-КВАРТИРА"
+
+[node name="BaseName" type="Label" parent="SafeArea/MainVBox/TopBar/TitleVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "УРОВЕНЬ: ГАРАЖ"
+
+[node name="BudgetLabel" type="Label" parent="SafeArea/MainVBox/TopBar"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+theme_override_font_sizes/font_size = 18
+text = "$15000"
+
+[node name="BackButton" type="Button" parent="SafeArea/MainVBox/TopBar"]
+custom_minimum_size = Vector2(100, 35)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="ContentHBox" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="BlueprintPanel" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/BlueprintPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 13
+text = "ПЛАНИРОВКА ПОМЕЩЕНИЙ"
+
+[node name="RoomGrid" type="GridContainer" parent="SafeArea/MainVBox/ContentHBox/BlueprintPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 12
+columns = 3
+
+[node name="ControlScroll" type="ScrollContainer" parent="SafeArea/MainVBox/ContentHBox"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="ControlPanel" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="UpgradeCard" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel"]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/UpgradeCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/UpgradeCard/VBox"]
+layout_mode = 2
+text = "РАЗВИТИЕ БАЗЫ"
+horizontal_alignment = 1
+
+[node name="Info" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/UpgradeCard/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "Инфо"
+horizontal_alignment = 1
+
+[node name="UpgradeBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/UpgradeCard/VBox"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+text = "ПЕРЕЕХАТЬ"
+
+[node name="TransportCard" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel"]
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard/VBox"]
+layout_mode = 2
+text = "ТРАНСПОРТ"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard/VBox"]
+layout_mode = 2
+text = "Маршрутка"
+horizontal_alignment = 1
+
+[node name="Effect" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Эффект"
+horizontal_alignment = 1
+
+[node name="UpgradeBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard/VBox"]
+layout_mode = 2
+text = "УЛУЧШИТЬ"
+
+[node name="EffectsCard" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/EffectsCard"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/EffectsCard/VBox"]
+layout_mode = 2
+text = "БОНУСЫ"
+horizontal_alignment = 1
+
+[node name="List" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/EffectsCard/VBox"]
+layout_mode = 2
+
+[node name="PopupOverlay" type="ColorRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.705882)
+
+[node name="BuildPopup" type="PanelContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -300.0
+offset_top = -200.0
+offset_right = 300.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBox" type="VBoxContainer" parent="BuildPopup"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Label" type="Label" parent="BuildPopup/VBox"]
+layout_mode = 2
+text = "ДОСТУПНЫЕ ПОМЕЩЕНИЯ"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="BuildPopup/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="List" type="VBoxContainer" parent="BuildPopup/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CloseBtn" type="Button" parent="BuildPopup/VBox"]
+layout_mode = 2
+text = "ЗАКРЫТЬ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/TopBar/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/UpgradeCard/VBox/UpgradeBtn" to="." method="_on_base_upgrade_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/ControlScroll/ControlPanel/TransportCard/VBox/UpgradeBtn" to="." method="_on_transport_upgrade_pressed"]
+[connection signal="pressed" from="BuildPopup/VBox/CloseBtn" to="." method="_on_popup_close_pressed"]

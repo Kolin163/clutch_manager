@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://c5r7y8w8x1u2"]
+
+[ext_resource type="Script" uid="uid://dif34pudvo41y" path="res://ui/components/agent_mini_card.gd" id="1_agent_mini"]
+[ext_resource type="PackedScene" uid="uid://avatar_portrait" path="res://ui/components/avatar_portrait.tscn" id="2_avatar"]
+
+[node name="AgentMiniCard" type="Button" unique_id=340396619]
+custom_minimum_size = Vector2(0, 120)
+offset_right = 320.0
+offset_bottom = 120.0
+size_flags_horizontal = 3
+mouse_default_cursor_shape = 2
+script = ExtResource("1_agent_mini")
+
+[node name="Margin" type="MarginContainer" parent="." unique_id=1010937677]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="HBox" type="HBoxContainer" parent="Margin" unique_id=996875083]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 15
+
+[node name="Portrait" type="Control" parent="Margin/HBox" unique_id=1194767451]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+mouse_filter = 2
+clip_contents = true
+
+[node name="AvatarPortrait" parent="Margin/HBox/Portrait" instance=ExtResource("2_avatar")]
+layout_mode = 1
+offset_top = 10.0
+
+[node name="Info" type="VBoxContainer" parent="Margin/HBox" unique_id=151324073]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+alignment = 1
+
+[node name="TopLine" type="HBoxContainer" parent="Margin/HBox/Info" unique_id=187352575]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Nickname" type="Label" parent="Margin/HBox/Info/TopLine" unique_id=668104018]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 18
+text = "NICK"
+
+[node name="Overall" type="Label" parent="Margin/HBox/Info/TopLine" unique_id=284730707]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.4, 1)
+theme_override_font_sizes/font_size = 18
+text = "80"
+
+[node name="SubLine" type="Label" parent="Margin/HBox/Info" unique_id=160674001]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 12
+text = "🇷🇺 | ROLE"
+
+[node name="Fee" type="Label" parent="Margin/HBox/Info" unique_id=1228795668]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 13
+text = "БОНУС: $0"
+
+[node name="Salary" type="Label" parent="Margin/HBox/Info" unique_id=1473029531]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.9, 0.5, 1)
+theme_override_font_sizes/font_size = 11
+text = "$500/СЕЗ"

@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://b12n14n10gl41"]
+
+[ext_resource type="Script" uid="uid://c3p65dmi4smnf" path="res://ui/screens/patch_notes.gd" id="1_64q54"]
+
+[node name="PatchNotes" type="Control" unique_id=1904734330]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_64q54")
+
+[node name="Background" type="ColorRect" parent="." unique_id=354927121]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.06, 0.08, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="." unique_id=224432446]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 40
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea" unique_id=842485153]
+layout_mode = 2
+theme_override_constants/separation = 25
+
+[node name="Header" type="VBoxContainer" parent="SafeArea/VBox" unique_id=1742443185]
+layout_mode = 2
+alignment = 1
+
+[node name="SeasonLabel" type="Label" parent="SafeArea/VBox/Header" unique_id=1340213597]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 18
+text = "ОБНОВЛЕНИЕ СЕЗОНА 2"
+horizontal_alignment = 1
+
+[node name="MetaTitle" type="Label" parent="SafeArea/VBox/Header" unique_id=1546025084]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "МЕТА АГРЕССИИ"
+horizontal_alignment = 1
+
+[node name="MetaDesc" type="Label" parent="SafeArea/VBox/Header" unique_id=798076453]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 16
+text = "Краткое описание того, как изменится игра в этом сезоне..."
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="BlocksScroll" type="ScrollContainer" parent="SafeArea/VBox" unique_id=1707393792]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="BlocksGrid" type="GridContainer" parent="SafeArea/VBox/BlocksScroll" unique_id=422550985]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="Footer" type="CenterContainer" parent="SafeArea/VBox" unique_id=494235651]
+layout_mode = 2
+
+[node name="ContinueBtn" type="Button" parent="SafeArea/VBox/Footer" unique_id=1314608253]
+custom_minimum_size = Vector2(300, 55)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "ПРИНЯТЬ И НАЧАТЬ"
+
+[connection signal="pressed" from="SafeArea/VBox/Footer/ContinueBtn" to="." method="_on_continue_pressed"]

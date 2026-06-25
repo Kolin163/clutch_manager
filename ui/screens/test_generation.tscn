@@ -1,0 +1,130 @@
+[gd_scene format=3 uid="uid://bcy7pbod0ju0k"]
+
+[ext_resource type="Script" uid="uid://dg6xabsa4at1t" path="res://ui/screens/test_generation.gd" id="1_7bc0s"]
+
+[node name="TestGeneration" type="Control" unique_id=1099890656]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7bc0s")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1909945666]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.09803922, 0.09803922, 0.14901961, 1)
+
+[node name="VBox" type="VBoxContainer" parent="." unique_id=855770709]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Header" type="HBoxContainer" parent="VBox" unique_id=222925546]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VBox/Header" unique_id=7467691]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "PLAYER GENERATION TEST"
+
+[node name="BackButton" type="Button" parent="VBox/Header" unique_id=435147372]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+text = "← BACK"
+
+[node name="Controls" type="HBoxContainer" parent="VBox" unique_id=580410041]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="GenerateButton" type="Button" parent="VBox/Controls" unique_id=430277080]
+custom_minimum_size = Vector2(180, 50)
+layout_mode = 2
+text = "GENERATE RANDOM"
+
+[node name="Generate5Button" type="Button" parent="VBox/Controls" unique_id=1072791738]
+custom_minimum_size = Vector2(180, 50)
+layout_mode = 2
+text = "GENERATE ROSTER (5)"
+
+[node name="YoungButton" type="Button" parent="VBox/Controls" unique_id=449873050]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "YOUNG TALENT"
+
+[node name="VeteranButton" type="Button" parent="VBox/Controls" unique_id=1347204604]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "VETERAN"
+
+[node name="CountLabel" type="Label" parent="VBox/Controls" unique_id=419174536]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 14
+text = "Generated: 0"
+horizontal_alignment = 2
+
+[node name="HSeparator" type="HSeparator" parent="VBox" unique_id=64328999]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBox" unique_id=292230164]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 3
+
+[node name="CardContainer" type="HBoxContainer" parent="VBox/ScrollContainer" unique_id=1978089680]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="DebugPanel" type="PanelContainer" parent="." unique_id=257097951]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -320.0
+offset_top = -180.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="VBox" type="VBoxContainer" parent="DebugPanel" unique_id=1408446423]
+layout_mode = 2
+
+[node name="DebugTitle" type="Label" parent="DebugPanel/VBox" unique_id=1148169489]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 12
+text = "DEBUG"
+
+[node name="DebugLog" type="RichTextLabel" parent="DebugPanel/VBox" unique_id=1810510650]
+custom_minimum_size = Vector2(300, 130)
+layout_mode = 2
+bbcode_enabled = true
+scroll_following = true
+
+[connection signal="pressed" from="VBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="VBox/Controls/GenerateButton" to="." method="_on_generate_pressed"]
+[connection signal="pressed" from="VBox/Controls/Generate5Button" to="." method="_on_generate_5_pressed"]
+[connection signal="pressed" from="VBox/Controls/YoungButton" to="." method="_on_young_pressed"]
+[connection signal="pressed" from="VBox/Controls/VeteranButton" to="." method="_on_veteran_pressed"]

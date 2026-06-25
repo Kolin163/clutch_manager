@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://be5qbp6sqmmvu"]
+
+[ext_resource type="Script" uid="uid://bx6jde2bw012p" path="res://ui/screens/major_screen.gd" id="1_mau53"]
+
+[node name="MajorScreen" type="Control" unique_id=943927855]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mau53")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1004668748]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.050980393, 0.05882353, 0.101960786, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="." unique_id=963827621]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="MainVBox" unique_id=51652971]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MainVBox/Header" unique_id=1690401770]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "МАЖОР"
+
+[node name="PhaseLabel" type="Label" parent="MainVBox/Header" unique_id=496490736]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.3019608, 1)
+theme_override_font_sizes/font_size = 18
+text = "Групповой этап"
+
+[node name="PlayerStatus" type="Label" parent="MainVBox/Header" unique_id=1811590903]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Вы учавствуете!"
+
+[node name="ContentHBox" type="HBoxContainer" parent="MainVBox" unique_id=361004068]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="GroupAPanel" type="PanelContainer" parent="MainVBox/ContentHBox" unique_id=1799339967]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GroupAVBox" type="VBoxContainer" parent="MainVBox/ContentHBox/GroupAPanel" unique_id=760136539]
+layout_mode = 2
+
+[node name="GroupALabel" type="Label" parent="MainVBox/ContentHBox/GroupAPanel/GroupAVBox" unique_id=242704771]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5019608, 0.8, 1, 1)
+text = "ГРУППА А"
+horizontal_alignment = 1
+
+[node name="GroupAScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/GroupAPanel/GroupAVBox" unique_id=2066487810]
+layout_mode = 2
+
+[node name="GroupAList" type="VBoxContainer" parent="MainVBox/ContentHBox/GroupAPanel/GroupAVBox/GroupAScroll" unique_id=439596498]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="GroupBPanel" type="PanelContainer" parent="MainVBox/ContentHBox" unique_id=224362600]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GroupBVBox" type="VBoxContainer" parent="MainVBox/ContentHBox/GroupBPanel" unique_id=1438925483]
+layout_mode = 2
+
+[node name="GroupBLabel" type="Label" parent="MainVBox/ContentHBox/GroupBPanel/GroupBVBox" unique_id=1315793653]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.5019608, 0.5019608, 1)
+text = "ГРУППА В"
+horizontal_alignment = 1
+
+[node name="GroupBScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/GroupBPanel/GroupBVBox" unique_id=2012478905]
+layout_mode = 2
+
+[node name="GroupBList" type="VBoxContainer" parent="MainVBox/ContentHBox/GroupBPanel/GroupBVBox/GroupBScroll" unique_id=2014774637]
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="BracketPanel" type="PanelContainer" parent="MainVBox/ContentHBox" unique_id=684820598]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="BracketVBox" type="VBoxContainer" parent="MainVBox/ContentHBox/BracketPanel" unique_id=626968906]
+layout_mode = 2
+
+[node name="BracketLabel" type="Label" parent="MainVBox/ContentHBox/BracketPanel/BracketVBox" unique_id=1230624290]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9019608, 0.3019608, 1)
+text = "ПЛЕЙ-ОФФ"
+horizontal_alignment = 1
+
+[node name="BracketScroll" type="ScrollContainer" parent="MainVBox/ContentHBox/BracketPanel/BracketVBox" unique_id=206424566]
+layout_mode = 2
+
+[node name="BracketList" type="VBoxContainer" parent="MainVBox/ContentHBox/BracketPanel/BracketVBox/BracketScroll" unique_id=198393606]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Footer" type="HBoxContainer" parent="MainVBox" unique_id=1068883211]
+layout_mode = 2
+
+[node name="SimulateGroupsButton" type="Button" parent="MainVBox/Footer" unique_id=1032921020]
+custom_minimum_size = Vector2(220, 45)
+layout_mode = 2
+text = "ГРУППОВОЙ ЭТАП"
+
+[node name="SimulatePlayoffButton" type="Button" parent="MainVBox/Footer" unique_id=1351944841]
+custom_minimum_size = Vector2(220, 45)
+layout_mode = 2
+text = "ПЛЕЙ-ОФФ"
+
+[node name="ContinueButton" type="Button" parent="MainVBox/Footer" unique_id=741047903]
+custom_minimum_size = Vector2(220, 45)
+layout_mode = 2
+text = "ПРОДОЛЖИТЬ"
+
+[connection signal="pressed" from="MainVBox/Footer/SimulateGroupsButton" to="." method="_on_simulate_groups_pressed"]
+[connection signal="pressed" from="MainVBox/Footer/SimulatePlayoffButton" to="." method="_on_simulate_playoff_pressed"]
+[connection signal="pressed" from="MainVBox/Footer/ContinueButton" to="." method="_on_continue_pressed"]

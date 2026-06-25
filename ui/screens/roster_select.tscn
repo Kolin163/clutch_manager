@@ -1,0 +1,216 @@
+[gd_scene format=3 uid="uid://cohnokmb71jq3"]
+
+[ext_resource type="Script" path="res://ui/screens/roster_select.gd" id="1_ofuoj"]
+
+[node name="RosterSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ofuoj")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "ФОРМИРОВАНИЕ СОСТАВА"
+
+[node name="TeamInfo" type="Label" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "---"
+
+[node name="BudgetLabel" type="Label" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+theme_override_font_sizes/font_size = 18
+text = "$15000"
+horizontal_alignment = 2
+
+[node name="HSplit" type="HSplitContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+split_offset = 800
+
+[node name="AvailablePanel" type="VBoxContainer" parent="SafeArea/MainVBox/HSplit"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/AvailablePanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ДОСТУПНЫЕ АГЕНТЫ"
+
+[node name="AvailableScroll" type="ScrollContainer" parent="SafeArea/MainVBox/HSplit/AvailablePanel"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="AvailableGrid" type="GridContainer" parent="SafeArea/MainVBox/HSplit/AvailablePanel/AvailableScroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="SelectedPanel" type="VBoxContainer" parent="SafeArea/MainVBox/HSplit"]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ВАША ОБОЙМА"
+horizontal_alignment = 1
+
+[node name="SlotsContainer" type="VBoxContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Slot0" type="PanelContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot0"]
+layout_mode = 2
+text = "ПУСТОЙ СЛОТ"
+horizontal_alignment = 1
+
+[node name="RemoveBtn" type="Button" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot0"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[node name="Slot1" type="PanelContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot1"]
+layout_mode = 2
+text = "ПУСТОЙ СЛОТ"
+horizontal_alignment = 1
+
+[node name="RemoveBtn" type="Button" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot1"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[node name="Slot2" type="PanelContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot2"]
+layout_mode = 2
+text = "ПУСТОЙ СЛОТ"
+horizontal_alignment = 1
+
+[node name="RemoveBtn" type="Button" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot2"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[node name="Slot3" type="PanelContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot3"]
+layout_mode = 2
+text = "ПУСТОЙ СЛОТ"
+horizontal_alignment = 1
+
+[node name="RemoveBtn" type="Button" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot3"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[node name="Slot4" type="PanelContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot4"]
+layout_mode = 2
+text = "ПУСТОЙ СЛОТ"
+horizontal_alignment = 1
+
+[node name="RemoveBtn" type="Button" parent="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot4"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "✕"
+
+[node name="Spacer" type="Control" parent="SafeArea/MainVBox/HSplit/SelectedPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InfoVBox" type="VBoxContainer" parent="SafeArea/MainVBox/HSplit/SelectedPanel"]
+layout_mode = 2
+theme_override_constants/separation = 4
+
+[node name="SalaryLabel" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/InfoVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "Общие зарплаты: $0"
+
+[node name="RolesInfo" type="Label" parent="SafeArea/MainVBox/HSplit/SelectedPanel/InfoVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 12
+text = "Роли: ---"
+autowrap_mode = 2
+
+[node name="Footer" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="BackButton" type="Button" parent="SafeArea/MainVBox/Footer"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "← НАЗАД"
+
+[node name="StartButton" type="Button" parent="SafeArea/MainVBox/Footer"]
+custom_minimum_size = Vector2(250, 45)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "НАЧАТЬ СЕЗОН"
+
+[connection signal="pressed" from="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot0/RemoveBtn" to="." method="_on_remove_pressed" binds= [0]]
+[connection signal="pressed" from="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot1/RemoveBtn" to="." method="_on_remove_pressed" binds= [1]]
+[connection signal="pressed" from="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot2/RemoveBtn" to="." method="_on_remove_pressed" binds= [2]]
+[connection signal="pressed" from="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot3/RemoveBtn" to="." method="_on_remove_pressed" binds= [3]]
+[connection signal="pressed" from="SafeArea/MainVBox/HSplit/SelectedPanel/SlotsContainer/Slot4/RemoveBtn" to="." method="_on_remove_pressed" binds= [4]]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/StartButton" to="." method="_on_start_pressed"]

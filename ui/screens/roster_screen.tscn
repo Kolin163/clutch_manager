@@ -1,0 +1,148 @@
+[gd_scene format=3 uid="uid://ch62gmdijn8nc"]
+
+[ext_resource type="Script" uid="uid://bm5n4qosbtq4m" path="res://ui/screens/roster_screen.gd" id="1_nxdqv"]
+[ext_resource type="PackedScene" uid="uid://1eljy1obeg1u" path="res://ui/components/player_card.tscn" id="2_card"]
+
+[node name="RosterScreen" type="Control" unique_id=1584493440]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nxdqv")
+
+[node name="Background" type="ColorRect" parent="." unique_id=25915249]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="." unique_id=2113620205]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Header" type="HBoxContainer" parent="MainVBox" unique_id=1425368534]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MainVBox/Header" unique_id=796200166]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "УПРАВЛЕНИЕ СОСТАВОМ"
+
+[node name="Budget" type="Label" parent="MainVBox/Header" unique_id=47445148]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+text = "$15000"
+
+[node name="BackButton" type="Button" parent="MainVBox/Header" unique_id=1011287571]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="ButtonBar" type="HBoxContainer" parent="MainVBox" unique_id=308408269]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="MarketBtn" type="Button" parent="MainVBox/ButtonBar" unique_id=1206957771]
+custom_minimum_size = Vector2(180, 40)
+layout_mode = 2
+text = "РЫНОК АГЕНТОВ"
+
+[node name="CompareBtn" type="Button" parent="MainVBox/ButtonBar" unique_id=166005204]
+custom_minimum_size = Vector2(180, 40)
+layout_mode = 2
+disabled = true
+text = "СРАВНИТЬ (0/2)"
+
+[node name="ContentHBox" type="HBoxContainer" parent="MainVBox" unique_id=579219067]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="LeftPanel" type="VBoxContainer" parent="MainVBox/ContentHBox" unique_id=1420332727]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="PlayerCard" parent="MainVBox/ContentHBox/LeftPanel" unique_id=406530949 instance=ExtResource("2_card")]
+layout_mode = 2
+
+[node name="Actions" type="VBoxContainer" parent="MainVBox/ContentHBox/LeftPanel" unique_id=2143900562]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="FireBtn" type="Button" parent="MainVBox/ContentHBox/LeftPanel/Actions" unique_id=1776325434]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.4, 0.4, 1)
+text = "РАСТОРГНУТЬ КОНТРАКТ"
+
+[node name="RightPanel" type="VBoxContainer" parent="MainVBox/ContentHBox" unique_id=1590663292]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ListHeader" type="PanelContainer" parent="MainVBox/ContentHBox/RightPanel" unique_id=131078408]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBox" type="HBoxContainer" parent="MainVBox/ContentHBox/RightPanel/ListHeader" unique_id=1942008609]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="S" type="Control" parent="MainVBox/ContentHBox/RightPanel/ListHeader/HBox" unique_id=781794416]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="MainVBox/ContentHBox/RightPanel/ListHeader/HBox" unique_id=422983367]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+text = "ИГРОК"
+
+[node name="Role" type="Label" parent="MainVBox/ContentHBox/RightPanel/ListHeader/HBox" unique_id=447894748]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "РОЛЬ"
+
+[node name="Morale" type="Label" parent="MainVBox/ContentHBox/RightPanel/ListHeader/HBox" unique_id=1745715145]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "МОРАЛЬ"
+horizontal_alignment = 1
+
+[node name="Fatigue" type="Label" parent="MainVBox/ContentHBox/RightPanel/ListHeader/HBox" unique_id=1360489427]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "УСТАЛОСТЬ"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="MainVBox/ContentHBox/RightPanel" unique_id=844595639]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RosterList" type="VBoxContainer" parent="MainVBox/ContentHBox/RightPanel/Scroll" unique_id=1457473375]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 5
+
+[connection signal="pressed" from="MainVBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MainVBox/ButtonBar/MarketBtn" to="." method="_on_market_pressed"]
+[connection signal="pressed" from="MainVBox/ButtonBar/CompareBtn" to="." method="_on_compare_pressed"]
+[connection signal="pressed" from="MainVBox/ContentHBox/LeftPanel/Actions/FireBtn" to="." method="_on_fire_pressed"]

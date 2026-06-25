@@ -1,0 +1,102 @@
+[gd_scene format=3 uid="uid://lak1f4lpfxak"]
+
+[ext_resource type="Script" uid="uid://bpsq80hwbppk3" path="res://ui/screens/team_setup.gd" id="1_lus1n"]
+
+[node name="TeamSetup" type="Control" unique_id=1785860859]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lus1n")
+
+[node name="Background" type="ColorRect" parent="." unique_id=250023656]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="." unique_id=747742583]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea" unique_id=1219361491]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=530881385]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/Header" unique_id=373497370]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "РЕГИСТРАЦИЯ ОРГАНИЗАЦИИ"
+
+[node name="BackButton" type="Button" parent="SafeArea/MainVBox/Header" unique_id=855642380]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+text = "← НАЗАД"
+
+[node name="Center" type="VBoxContainer" parent="SafeArea/MainVBox" unique_id=811752470]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="NameBox" type="VBoxContainer" parent="SafeArea/MainVBox/Center" unique_id=791669643]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/Center/NameBox" unique_id=2024810017]
+layout_mode = 2
+text = "НАЗВАНИЕ КОМАНДЫ"
+horizontal_alignment = 1
+
+[node name="NameInput" type="LineEdit" parent="SafeArea/MainVBox/Center/NameBox" unique_id=1572719225]
+custom_minimum_size = Vector2(400, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "Введите название..."
+alignment = 1
+
+[node name="LogoBox" type="VBoxContainer" parent="SafeArea/MainVBox/Center" unique_id=428766033]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/Center/LogoBox" unique_id=1286413250]
+layout_mode = 2
+text = "ВЫБЕРИТЕ ЛОГОТИП"
+horizontal_alignment = 1
+
+[node name="LogoGrid" type="GridContainer" parent="SafeArea/MainVBox/Center/LogoBox" unique_id=279519761]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 4
+
+[node name="Footer" type="CenterContainer" parent="SafeArea/MainVBox" unique_id=718254520]
+layout_mode = 2
+
+[node name="NextButton" type="Button" parent="SafeArea/MainVBox/Footer" unique_id=303030222]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "ДАЛЕЕ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="text_changed" from="SafeArea/MainVBox/Center/NameBox/NameInput" to="." method="_on_name_changed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/NextButton" to="." method="_on_next_pressed"]

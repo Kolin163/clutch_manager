@@ -1,0 +1,168 @@
+[gd_scene format=3 uid="uid://co3aadt28nlkw"]
+
+[ext_resource type="Script" path="res://ui/screens/league_table.gd" id="1_87g2u"]
+
+[node name="LeagueTable" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_87g2u")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0705882, 0.0901961, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 25
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "РЕЙТИНГ ЛИГИ"
+
+[node name="LeagueSelector" type="OptionButton" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(200, 35)
+layout_mode = 2
+
+[node name="MatchDayLabel" type="Label" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+text = "ТУР 0 / 14"
+horizontal_alignment = 2
+
+[node name="TablePanel" type="PanelContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/MainVBox/TablePanel"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TableHeader" type="ColorRect" parent="SafeArea/MainVBox/TablePanel/VBox"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+color = Color(0.12549, 0.145098, 0.192157, 1)
+
+[node name="HBox" type="HBoxContainer" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="Pos" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "#"
+horizontal_alignment = 1
+
+[node name="Team" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 12
+text = "КОМАНДА"
+
+[node name="Played" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "И"
+horizontal_alignment = 1
+
+[node name="Wins" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "В"
+horizontal_alignment = 1
+
+[node name="Losses" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "П"
+horizontal_alignment = 1
+
+[node name="Diff" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "+/-"
+horizontal_alignment = 1
+
+[node name="Points" type="Label" parent="SafeArea/MainVBox/TablePanel/VBox/TableHeader/HBox"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "ОЧКИ"
+horizontal_alignment = 1
+
+[node name="Scroll" type="ScrollContainer" parent="SafeArea/MainVBox/TablePanel/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="TableContainer" type="VBoxContainer" parent="SafeArea/MainVBox/TablePanel/VBox/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 2
+
+[node name="Footer" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="BackButton" type="Button" parent="SafeArea/MainVBox/Footer"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="NextMatchLabel" type="Label" parent="SafeArea/MainVBox/Footer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+text = "Следующий матч: ---"
+
+[node name="SimulateDayButton" type="Button" parent="SafeArea/MainVBox/Footer"]
+custom_minimum_size = Vector2(200, 45)
+layout_mode = 2
+text = "СИМУЛИРОВАТЬ ТУР"
+
+[node name="PlayMatchButton" type="Button" parent="SafeArea/MainVBox/Footer"]
+custom_minimum_size = Vector2(220, 45)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 1, 0.5, 1)
+text = "ИГРАТЬ МАТЧ"
+
+[connection signal="item_selected" from="SafeArea/MainVBox/Header/LeagueSelector" to="." method="_on_league_selected"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/SimulateDayButton" to="." method="_on_simulate_day_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/PlayMatchButton" to="." method="_on_play_match_pressed"]

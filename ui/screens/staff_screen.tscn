@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://ee8gwwiv7iln"]
+
+[ext_resource type="Script" path="res://ui/screens/staff_screen.gd" id="1_vrnqh"]
+
+[node name="StaffScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vrnqh")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 25
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+
+[node name="TitleVBox" type="VBoxContainer" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="SafeArea/MainVBox/Header/TitleVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "УПРАВЛЕНИЕ ПЕРСОНАЛОМ"
+
+[node name="SlotsLabel" type="Label" parent="SafeArea/MainVBox/Header/TitleVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+text = "Свободных мест: 0/0"
+
+[node name="Budget" type="Label" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+theme_override_font_sizes/font_size = 20
+text = "$15000"
+
+[node name="BackButton" type="Button" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="ContentHBox" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 25
+
+[node name="LeftPanel" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="HiredSection" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/HiredSection"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ВАША КОМАНДА"
+
+[node name="HiredList" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/HiredSection"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="MarketSection" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+text = "ДОСТУПНЫЕ КАНДИДАТЫ"
+
+[node name="RefreshBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection/Header"]
+custom_minimum_size = Vector2(180, 30)
+layout_mode = 2
+theme_override_font_sizes/font_size = 12
+text = "ОБНОВИТЬ СПИСОК (1/2)"
+
+[node name="Scroll" type="ScrollContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="MarketList" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 6
+
+[node name="RightPanel" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox"]
+custom_minimum_size = Vector2(380, 0)
+layout_mode = 2
+
+[node name="DetailVBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+theme_override_constants/separation = 20
+
+[node name="RoleIcon" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 64
+text = "👤"
+horizontal_alignment = 1
+
+[node name="Name" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Имя Фамилия"
+horizontal_alignment = 1
+
+[node name="RoleName" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+text = "РОЛЬ"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+
+[node name="Stats" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Skill" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox/Stats"]
+layout_mode = 2
+text = "Уровень навыка: 0"
+
+[node name="Contract" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox/Stats"]
+layout_mode = 2
+text = "Контракт: 0 сез."
+
+[node name="BonusLabel" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+text = "БОНУСЫ ДЛЯ КОМАНДЫ:"
+
+[node name="BonusText" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+theme_override_font_sizes/font_size = 13
+text = "Описание эффектов..."
+autowrap_mode = 2
+
+[node name="Spacer" type="Control" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ActionBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "ДЕЙСТВИЕ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/LeftPanel/MarketSection/Header/RefreshBtn" to="." method="_on_refresh_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/DetailVBox/ActionBtn" to="." method="_on_action_pressed"]

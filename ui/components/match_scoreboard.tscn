@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://g2a6l4hk3bxx"]
+
+[ext_resource type="Script" uid="uid://dvlne0r6qu6o5" path="res://ui/components/match_scoreboard.gd" id="1_xn1qt"]
+
+[node name="MatchScoreboard" type="PanelContainer" unique_id=970376571]
+custom_minimum_size = Vector2(420, 140)
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xn1qt")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=405101410]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 14
+
+[node name="VBox" type="VBoxContainer" parent="MarginContainer" unique_id=242085726]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Header" type="HBoxContainer" parent="MarginContainer/VBox" unique_id=1438102490]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MarginContainer/VBox/Header" unique_id=1046129500]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(1, 0.8, 0.3019608, 1)
+theme_override_font_sizes/font_size = 14
+text = "ПОСЛЕДНИЙ МАТЧ"
+
+[node name="Location" type="Label" parent="MarginContainer/VBox/Header" unique_id=1749495205]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7019608, 1)
+theme_override_font_sizes/font_size = 12
+text = "Дома"
+
+[node name="TeamsHBox" type="HBoxContainer" parent="MarginContainer/VBox" unique_id=1739393933]
+layout_mode = 2
+theme_override_constants/separation = 18
+alignment = 1
+
+[node name="MyTeam" type="Label" parent="MarginContainer/VBox/TeamsHBox" unique_id=1232083641]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "My Team"
+
+[node name="Score" type="Label" parent="MarginContainer/VBox/TeamsHBox" unique_id=965475671]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "13 : 9"
+
+[node name="EnemyTeam" type="Label" parent="MarginContainer/VBox/TeamsHBox" unique_id=367187678]
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Enemy"
+
+[node name="ResultLabel" type="Label" parent="MarginContainer/VBox" unique_id=1297319729]
+layout_mode = 2
+text = "ПОБЕДА"
+horizontal_alignment = 1

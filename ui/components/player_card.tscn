@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://1eljy1obeg1u"]
+
+[ext_resource type="Script" path="res://ui/components/player_card.gd" id="1_wy4yr"]
+[ext_resource type="PackedScene" uid="uid://avatar_portrait" path="res://ui/components/avatar_portrait.tscn" id="2_avatar"]
+
+[node name="PlayerCard" type="PanelContainer"]
+custom_minimum_size = Vector2(300, 420)
+offset_right = 300.0
+offset_bottom = 420.0
+script = ExtResource("1_wy4yr")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBox" type="VBoxContainer" parent="Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Header" type="HBoxContainer" parent="Margin/VBox"]
+layout_mode = 2
+
+[node name="PortraitPlaceholder" type="Control" parent="Margin/VBox/Header"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+clip_contents = true
+
+[node name="AvatarPortrait" parent="Margin/VBox/Header/PortraitPlaceholder" instance=ExtResource("2_avatar")]
+layout_mode = 1
+offset_top = 10.0
+
+[node name="NameVBox" type="VBoxContainer" parent="Margin/VBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Nickname" type="Label" parent="Margin/VBox/Header/NameVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "NICKNAME"
+
+[node name="FullName" type="Label" parent="Margin/VBox/Header/NameVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 12
+text = "First Last"
+
+[node name="Tabs" type="TabContainer" parent="Margin/VBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 12
+tab_alignment = 1
+
+[node name="Навыки" type="VBoxContainer" parent="Margin/VBox/Tabs"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Spacer" type="Control" parent="Margin/VBox/Tabs/Навыки"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="SkillsGrid" type="GridContainer" parent="Margin/VBox/Tabs/Навыки"]
+layout_mode = 2
+theme_override_constants/h_separation = 15
+columns = 2
+
+[node name="Aim" type="Label" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+layout_mode = 2
+text = "Aim"
+
+[node name="AimBar" type="ProgressBar" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+custom_minimum_size = Vector2(140, 14)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="Utility" type="Label" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+layout_mode = 2
+text = "Utility"
+
+[node name="UtilityBar" type="ProgressBar" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+custom_minimum_size = Vector2(140, 14)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="GS" type="Label" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+layout_mode = 2
+text = "Sense"
+
+[node name="GSBar" type="ProgressBar" parent="Margin/VBox/Tabs/Навыки/SkillsGrid"]
+custom_minimum_size = Vector2(140, 14)
+layout_mode = 2
+value = 50.0
+show_percentage = false
+
+[node name="Overall" type="Label" parent="Margin/VBox/Tabs/Навыки"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.4, 1)
+text = "РЕЙТИНГ: 0"
+horizontal_alignment = 1
+
+[node name="Potential" type="Label" parent="Margin/VBox/Tabs/Навыки"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 13
+text = "ПОТЕНЦИАЛ: ???"
+horizontal_alignment = 1
+
+[node name="Контракт" type="VBoxContainer" parent="Margin/VBox/Tabs"]
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="ContractLabel" type="Label" parent="Margin/VBox/Tabs/Контракт"]
+layout_mode = 2
+text = "Зарплата: $0/сез
+Срок: 0 сез.
+Статус: Активен"
+horizontal_alignment = 1

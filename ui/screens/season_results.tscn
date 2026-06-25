@@ -1,0 +1,124 @@
+[gd_scene format=3 uid="uid://wl6vetnpmvxw"]
+
+[ext_resource type="Script" path="res://ui/screens/season_results.gd" id="1_gimh2"]
+
+[node name="SeasonResults" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gimh2")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0470588, 0.0588235, 0.0745098, 1)
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainPanel" type="VBoxContainer" parent="CenterContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="Header" type="VBoxContainer" parent="CenterContainer/MainPanel"]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="CenterContainer/MainPanel/Header"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 42
+text = "СЕЗОН ЗАВЕРШЕН"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="CenterContainer/MainPanel/Header"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 18
+text = "Champions League - Season 1"
+horizontal_alignment = 1
+
+[node name="PlaceCard" type="PanelContainer" parent="CenterContainer/MainPanel"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="PlaceLabel" type="Label" parent="CenterContainer/MainPanel/PlaceCard"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "1 МЕСТО"
+horizontal_alignment = 1
+
+[node name="StatsGrid" type="GridContainer" parent="CenterContainer/MainPanel"]
+layout_mode = 2
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 15
+columns = 2
+
+[node name="WinLabel" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+text = "Победы / Поражения:"
+
+[node name="WinVal" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+text = "12 - 2"
+horizontal_alignment = 2
+
+[node name="PrizeLabel" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+text = "Призовые:"
+
+[node name="PrizeVal" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.4, 1, 0.4, 1)
+text = "+$5000"
+horizontal_alignment = 2
+
+[node name="MoveLabel" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+text = "Статус лиги:"
+
+[node name="MoveVal" type="Label" parent="CenterContainer/MainPanel/StatsGrid"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+text = "ПОВЫШЕНИЕ"
+horizontal_alignment = 2
+
+[node name="HSeparator" type="HSeparator" parent="CenterContainer/MainPanel"]
+layout_mode = 2
+
+[node name="NextSeasonInfo" type="Label" parent="CenterContainer/MainPanel"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.7, 0.7, 0.8, 1)
+theme_override_font_sizes/font_size = 14
+text = "Следующий этап: Pro League"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="CenterContainer/MainPanel"]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="MenuBtn" type="Button" parent="CenterContainer/MainPanel/Buttons"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "В МЕНЮ"
+
+[node name="NextBtn" type="Button" parent="CenterContainer/MainPanel/Buttons"]
+custom_minimum_size = Vector2(250, 45)
+layout_mode = 2
+text = "СЛЕДУЮЩИЙ СЕЗОН →"
+
+[connection signal="pressed" from="CenterContainer/MainPanel/Buttons/MenuBtn" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="CenterContainer/MainPanel/Buttons/NextBtn" to="." method="_on_next_season_pressed"]

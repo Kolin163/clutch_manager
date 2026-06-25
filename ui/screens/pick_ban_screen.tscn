@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://bnj6pt32yqoai"]
+
+[ext_resource type="Script" uid="uid://c6qltj6nt2c65" path="res://ui/screens/pick_ban_screen.gd" id="1_xxx"]
+
+[node name="PickBanScreen" type="Control" unique_id=1288211870]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xxx")
+
+[node name="Background" type="ColorRect" parent="." unique_id=745006776]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.07, 0.1, 0.14, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="." unique_id=1552354691]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_right = 60
+theme_override_constants/margin_bottom = 40
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea" unique_id=1398804842]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="VBoxContainer" parent="SafeArea/MainVBox" unique_id=762786095]
+layout_mode = 2
+alignment = 1
+
+[node name="MatchTitle" type="Label" parent="SafeArea/MainVBox/Header" unique_id=178190012]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "МАТЧ МАЖОРА"
+horizontal_alignment = 1
+
+[node name="PhaseLabel" type="Label" parent="SafeArea/MainVBox/Header" unique_id=827787166]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.6, 0.2, 1)
+theme_override_font_sizes/font_size = 20
+text = "СТАДИЯ: ВЫБОР КАРТ"
+horizontal_alignment = 1
+
+[node name="MatchupLabel" type="Label" parent="SafeArea/MainVBox/Header" unique_id=1101900122]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Команда А vs Команда Б"
+horizontal_alignment = 1
+
+[node name="CurrentAction" type="Label" parent="SafeArea/MainVBox/Header" unique_id=1411766847]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Ваш ход: ЗАБАНИТЬ карту"
+horizontal_alignment = 1
+
+[node name="MapsGrid" type="GridContainer" parent="SafeArea/MainVBox" unique_id=668988621]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 4
+
+[node name="Footer" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=253507081]
+layout_mode = 2
+alignment = 1
+
+[node name="StartMatchBtn" type="Button" parent="SafeArea/MainVBox/Footer" unique_id=1532564709]
+custom_minimum_size = Vector2(250, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "НАЧАТЬ МАТЧ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/Footer/StartMatchBtn" to="." method="_on_start_match_pressed"]

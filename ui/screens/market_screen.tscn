@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://ghexdy2a5l4w"]
+
+[ext_resource type="Script" uid="uid://cxphi2uiwgiup" path="res://ui/screens/market_screen.gd" id="1_eavpf"]
+[ext_resource type="PackedScene" uid="uid://1eljy1obeg1u" path="res://ui/components/player_card.tscn" id="2_card"]
+
+[node name="MarketScreen" type="Control" unique_id=1843080265]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eavpf")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1912731697]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="MainVBox" type="VBoxContainer" parent="." unique_id=1372234685]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="Header" type="HBoxContainer" parent="MainVBox" unique_id=76990781]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="MainVBox/Header" unique_id=1512857938]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 28
+text = "ТРАНСФЕРНЫЙ РЫНОК"
+
+[node name="BudgetLabel" type="Label" parent="MainVBox/Header" unique_id=1633673316]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 1, 0.5, 1)
+theme_override_font_sizes/font_size = 20
+text = "$15000"
+
+[node name="BackButton" type="Button" parent="MainVBox/Header" unique_id=128034574]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+text = "НАЗАД"
+
+[node name="HSplit" type="HSplitContainer" parent="MainVBox" unique_id=1828016627]
+layout_mode = 2
+size_flags_vertical = 3
+split_offsets = PackedInt32Array(800)
+split_offset = 800
+
+[node name="GridPanel" type="PanelContainer" parent="MainVBox/HSplit" unique_id=602981409]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBox" type="VBoxContainer" parent="MainVBox/HSplit/GridPanel" unique_id=1421644564]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="FilterBar" type="HBoxContainer" parent="MainVBox/HSplit/GridPanel/VBox" unique_id=1067847379]
+layout_mode = 2
+
+[node name="RoleOption" type="OptionButton" parent="MainVBox/HSplit/GridPanel/VBox/FilterBar" unique_id=1784265597]
+custom_minimum_size = Vector2(150, 30)
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="MainVBox/HSplit/GridPanel/VBox" unique_id=601205708]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="AgentGrid" type="GridContainer" parent="MainVBox/HSplit/GridPanel/VBox/Scroll" unique_id=988994376]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 3
+
+[node name="DetailPanel" type="PanelContainer" parent="MainVBox/HSplit" unique_id=2079193382]
+custom_minimum_size = Vector2(350, 0)
+layout_mode = 2
+
+[node name="DetailVBox" type="VBoxContainer" parent="MainVBox/HSplit/DetailPanel" unique_id=1952412491]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="PlayerCard" parent="MainVBox/HSplit/DetailPanel/DetailVBox" unique_id=1260717518 instance=ExtResource("2_card")]
+layout_mode = 2
+
+[node name="HireVBox" type="VBoxContainer" parent="MainVBox/HSplit/DetailPanel/DetailVBox" unique_id=905225664]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="FeeLabel" type="Label" parent="MainVBox/HSplit/DetailPanel/DetailVBox/HireVBox" unique_id=2115857687]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.4, 1)
+text = "Стоимость подписания: $0"
+horizontal_alignment = 1
+
+[node name="HireBtn" type="Button" parent="MainVBox/HSplit/DetailPanel/DetailVBox/HireVBox" unique_id=1745521649]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+text = "НАНЯТЬ ИГРОКА"
+
+[node name="AnalystHint" type="Label" parent="MainVBox/HSplit/DetailPanel/DetailVBox" unique_id=466289034]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 11
+text = "* Наймите Аналитика, чтобы видеть точные скиллы"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="MainVBox/Header/BackButton" to="." method="_on_back_pressed"]
+[connection signal="item_selected" from="MainVBox/HSplit/GridPanel/VBox/FilterBar/RoleOption" to="." method="_on_role_filter_changed"]
+[connection signal="pressed" from="MainVBox/HSplit/DetailPanel/DetailVBox/HireVBox/HireBtn" to="." method="_on_hire_pressed"]

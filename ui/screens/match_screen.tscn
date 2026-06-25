@@ -1,0 +1,384 @@
+[gd_scene format=3 uid="uid://bjkp7osrpooi5"]
+
+[ext_resource type="Script" uid="uid://cg1wxglde8518" path="res://ui/screens/match_screen.gd" id="1_1xbvq"]
+
+[node name="MatchScreen" type="Control" unique_id=14285787]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1xbvq")
+
+[node name="Background" type="ColorRect" parent="." unique_id=230450665]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.05, 0.08, 0.1, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="." unique_id=239166155]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea" unique_id=1552017118]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TopBar" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=536622274]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="TeamPanel" type="PanelContainer" parent="SafeArea/MainVBox/TopBar" unique_id=1333928251]
+custom_minimum_size = Vector2(250, 60)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="SafeArea/MainVBox/TopBar/TeamPanel" unique_id=2011451665]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 5
+
+[node name="TeamHBox" type="HBoxContainer" parent="SafeArea/MainVBox/TopBar/TeamPanel/Margin" unique_id=1481862035]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="PlayerLogo" type="TextureRect" parent="SafeArea/MainVBox/TopBar/TeamPanel/Margin/TeamHBox" unique_id=447951770]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeamVBox" type="VBoxContainer" parent="SafeArea/MainVBox/TopBar/TeamPanel/Margin/TeamHBox" unique_id=2097432694]
+layout_mode = 2
+alignment = 1
+
+[node name="TeamName" type="Label" parent="SafeArea/MainVBox/TopBar/TeamPanel/Margin/TeamHBox/TeamVBox" unique_id=1964354139]
+layout_mode = 2
+text = "My Team"
+horizontal_alignment = 1
+
+[node name="TeamSide" type="Label" parent="SafeArea/MainVBox/TopBar/TeamPanel/Margin/TeamHBox/TeamVBox" unique_id=415815597]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 1, 1)
+theme_override_font_sizes/font_size = 12
+text = "Attack"
+horizontal_alignment = 1
+
+[node name="ScorePanel" type="PanelContainer" parent="SafeArea/MainVBox/TopBar" unique_id=715925550]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScoreHBox" type="HBoxContainer" parent="SafeArea/MainVBox/TopBar/ScorePanel" unique_id=1500446574]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="PlayerScore" type="Label" parent="SafeArea/MainVBox/TopBar/ScorePanel/ScoreHBox" unique_id=227535086]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3, 0.8, 0.4, 1)
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="Separator" type="Label" parent="SafeArea/MainVBox/TopBar/ScorePanel/ScoreHBox" unique_id=1894648992]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.5, 0.6, 1)
+theme_override_font_sizes/font_size = 36
+text = ":"
+
+[node name="EnemyScore" type="Label" parent="SafeArea/MainVBox/TopBar/ScorePanel/ScoreHBox" unique_id=99062136]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.3, 0.3, 1)
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="EnemyPanel" type="PanelContainer" parent="SafeArea/MainVBox/TopBar" unique_id=1002855358]
+custom_minimum_size = Vector2(250, 60)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="SafeArea/MainVBox/TopBar/EnemyPanel" unique_id=1786874635]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 5
+
+[node name="EnemyHBox" type="HBoxContainer" parent="SafeArea/MainVBox/TopBar/EnemyPanel/Margin" unique_id=1760431809]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="EnemyVBox" type="VBoxContainer" parent="SafeArea/MainVBox/TopBar/EnemyPanel/Margin/EnemyHBox" unique_id=305974020]
+layout_mode = 2
+alignment = 1
+
+[node name="EnemyName" type="Label" parent="SafeArea/MainVBox/TopBar/EnemyPanel/Margin/EnemyHBox/EnemyVBox" unique_id=1611725599]
+layout_mode = 2
+text = "Enemy Team"
+horizontal_alignment = 2
+
+[node name="EnemySide" type="Label" parent="SafeArea/MainVBox/TopBar/EnemyPanel/Margin/EnemyHBox/EnemyVBox" unique_id=866451704]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.5, 0.5, 1)
+theme_override_font_sizes/font_size = 12
+text = "Defence"
+horizontal_alignment = 2
+
+[node name="EnemyLogo" type="TextureRect" parent="SafeArea/MainVBox/TopBar/EnemyPanel/Margin/EnemyHBox" unique_id=1405066110]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+size_flags_horizontal = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="InfoBar" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=970308792]
+layout_mode = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="MapLabel" type="Label" parent="SafeArea/MainVBox/InfoBar" unique_id=1016271483]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Карта: Dust"
+
+[node name="RoundLabel" type="Label" parent="SafeArea/MainVBox/InfoBar" unique_id=1982370202]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.8, 0.3, 1)
+theme_override_font_sizes/font_size = 14
+text = "Раунд 1 / 24"
+
+[node name="HalfLabel" type="Label" parent="SafeArea/MainVBox/InfoBar" unique_id=2041341419]
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "Тайм 1"
+
+[node name="ContentHBox" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=659497842]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 15
+
+[node name="LeftPanel" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox" unique_id=198059901]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel" unique_id=1045803120]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="TacticsVBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/Margin" unique_id=390387486]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="TacticsLabel" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/Margin/TacticsVBox" unique_id=1035393460]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.5, 1)
+theme_override_font_sizes/font_size = 16
+text = "ТАКТИКА"
+horizontal_alignment = 1
+
+[node name="TacticsContainer" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/Margin/TacticsVBox" unique_id=1012221869]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="MapPanel" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox" unique_id=920044533]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="MapContainer" type="Control" parent="SafeArea/MainVBox/ContentHBox/MapPanel" unique_id=369229307]
+clip_contents = true
+layout_mode = 2
+
+[node name="MapBG" type="ColorRect" parent="SafeArea/MainVBox/ContentHBox/MapPanel/MapContainer" unique_id=1556678331]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.15, 0.18, 0.22, 1)
+
+[node name="SiteA" type="Label" parent="SafeArea/MainVBox/ContentHBox/MapPanel/MapContainer" unique_id=1114377940]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -200.0
+offset_right = 20.0
+offset_bottom = -170.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.3, 1)
+theme_override_font_sizes/font_size = 24
+text = "[A]"
+horizontal_alignment = 1
+
+[node name="SiteB" type="Label" parent="SafeArea/MainVBox/ContentHBox/MapPanel/MapContainer" unique_id=1935470106]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = 170.0
+offset_right = 20.0
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.8, 0.8, 0.3, 1)
+theme_override_font_sizes/font_size = 24
+text = "[B]"
+horizontal_alignment = 1
+
+[node name="PlayersContainer" type="Control" parent="SafeArea/MainVBox/ContentHBox/MapPanel/MapContainer" unique_id=1191486795]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="RightPanel" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox" unique_id=1272628726]
+custom_minimum_size = Vector2(280, 0)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel" unique_id=1062555286]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="LogVBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/Margin" unique_id=1741389448]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="LogLabel" type="Label" parent="SafeArea/MainVBox/ContentHBox/RightPanel/Margin/LogVBox" unique_id=67307926]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5, 0.8, 0.5, 1)
+theme_override_font_sizes/font_size = 14
+text = "ИСТОРИЯ РАУНДОВ"
+horizontal_alignment = 1
+
+[node name="LogScroll" type="ScrollContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/Margin/LogVBox" unique_id=29697304]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="LogText" type="RichTextLabel" parent="SafeArea/MainVBox/ContentHBox/RightPanel/Margin/LogVBox/LogScroll" unique_id=498724444]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+bbcode_enabled = true
+scroll_following = true
+
+[node name="BottomBar" type="HBoxContainer" parent="SafeArea/MainVBox" unique_id=1507606809]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="NextRoundButton" type="Button" parent="SafeArea/MainVBox/BottomBar" unique_id=1819452746]
+custom_minimum_size = Vector2(250, 55)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "СЛЕДУЮЩИЙ РАУНД"
+
+[node name="StatusLabel" type="Label" parent="SafeArea/MainVBox/BottomBar" unique_id=973035339]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_outline_color = Color(0.8, 0.8, 0.3, 1)
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+text = "Выберите тактику..."
+horizontal_alignment = 1
+
+[node name="SkipButton" type="Button" parent="SafeArea/MainVBox/BottomBar" unique_id=307853477]
+custom_minimum_size = Vector2(150, 55)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "СИМУЛЯЦИЯ"
+
+[node name="EventsLayer" type="CanvasLayer" parent="." unique_id=1655272505]
+layer = 10
+
+[node name="Overlay" type="ColorRect" parent="EventsLayer" unique_id=792145121]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6)
+
+[node name="EventCardContainer" type="CenterContainer" parent="EventsLayer/Overlay" unique_id=1263703187]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResultOverlay" type="ColorRect" parent="EventsLayer" unique_id=421059304]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.8)
+
+[node name="ResultVBox" type="VBoxContainer" parent="EventsLayer/ResultOverlay" unique_id=585788390]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="ResultTitle" type="Label" parent="EventsLayer/ResultOverlay/ResultVBox" unique_id=304467409]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "ПОБЕДА!"
+horizontal_alignment = 1
+
+[node name="ResultScore" type="Label" parent="EventsLayer/ResultOverlay/ResultVBox" unique_id=1323955758]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.9, 0.9, 1)
+theme_override_font_sizes/font_size = 64
+text = "13 : 7"
+horizontal_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="EventsLayer/ResultOverlay/ResultVBox" unique_id=23621149]
+custom_minimum_size = Vector2(250, 60)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 20
+text = "ПРОДОЛЖИТЬ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/BottomBar/NextRoundButton" to="." method="_on_next_round_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/BottomBar/SkipButton" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="EventsLayer/ResultOverlay/ResultVBox/ContinueButton" to="." method="_on_continue_pressed"]

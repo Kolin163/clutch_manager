@@ -1,0 +1,239 @@
+[gd_scene format=3 uid="uid://4luk7tlv6u"]
+
+[ext_resource type="Script" path="res://ui/screens/season_screen.gd" id="1_42fal"]
+[ext_resource type="Texture2D" uid="uid://icon_res" path="res://icon.svg" id="2_icon"]
+
+[node name="SeasonScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_42fal")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0588235, 0.0784314, 0.0980392, 1)
+
+[node name="SafeArea" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 40
+theme_override_constants/margin_bottom = 30
+
+[node name="MainVBox" type="VBoxContainer" parent="SafeArea"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Header" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+
+[node name="TitleVBox" type="VBoxContainer" parent="SafeArea/MainVBox/Header"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SeasonLabel" type="Label" parent="SafeArea/MainVBox/Header/TitleVBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "СЕЗОН 1 | ТУР 0/14"
+
+[node name="Status" type="Label" parent="SafeArea/MainVBox/Header/TitleVBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.6, 0.6, 0.7, 1)
+theme_override_font_sizes/font_size = 12
+text = "ШТАБ-КВАРТИРА ОРГАНИЗАЦИИ"
+
+[node name="SaveBtn" type="Button" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(140, 40)
+layout_mode = 2
+text = "СОХРАНИТЬ"
+
+[node name="MenuBtn" type="Button" parent="SafeArea/MainVBox/Header"]
+custom_minimum_size = Vector2(140, 40)
+layout_mode = 2
+text = "В МЕНЮ"
+
+[node name="ContentHBox" type="HBoxContainer" parent="SafeArea/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 40
+
+[node name="LeftPanel" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+alignment = 1
+
+[node name="TeamCard" type="PanelContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="Logo" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox"]
+custom_minimum_size = Vector2(140, 140)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="TeamName" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "TEAM NAME"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox"]
+layout_mode = 2
+
+[node name="StatsGrid" type="GridContainer" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="L1" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "Лига:"
+[node name="LeagueVal" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "Open (#1)"
+[node name="L2" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "Бюджет:"
+[node name="BudgetVal" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "$15000"
+[node name="L3" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "Сила:"
+[node name="PowerVal" type="Label" parent="SafeArea/MainVBox/ContentHBox/LeftPanel/TeamCard/VBox/StatsGrid"]
+layout_mode = 2
+text = "55"
+
+[node name="RightPanel" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="ManagementGrid" type="GridContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 3
+
+[node name="LeagueBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/LeagueBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="LeagueBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/LeagueBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "ТАБЛИЦА ЛИГИ"
+
+[node name="RosterBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/RosterBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="RosterBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/RosterBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "СОСТАВ"
+
+[node name="TrainingBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/TrainingBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="TrainingBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/TrainingBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "ТРЕНИРОВКИ"
+
+[node name="BaseBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/BaseBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="BaseBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/BaseBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "БАЗА"
+
+[node name="StaffBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/StaffBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="StaffBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/StaffBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "ПЕРСОНАЛ"
+
+[node name="SponsorBox" type="VBoxContainer" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid"]
+layout_mode = 2
+size_flags_horizontal = 3
+[node name="Icon" type="TextureRect" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/SponsorBox"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_icon")
+expand_mode = 1
+stretch_mode = 5
+[node name="SponsorBtn" type="Button" parent="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/SponsorBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+text = "СПОНСОРЫ"
+
+[connection signal="pressed" from="SafeArea/MainVBox/Header/SaveBtn" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/Header/MenuBtn" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/LeagueBox/LeagueBtn" to="." method="_on_league_table_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/RosterBox/RosterBtn" to="." method="_on_roster_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/TrainingBox/TrainingBtn" to="." method="_on_training_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/BaseBox/BaseBtn" to="." method="_on_base_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/StaffBox/StaffBtn" to="." method="_on_staff_pressed"]
+[connection signal="pressed" from="SafeArea/MainVBox/ContentHBox/RightPanel/ManagementGrid/SponsorBox/SponsorBtn" to="." method="_on_sponsors_pressed"]
