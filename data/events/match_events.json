@@ -1,0 +1,491 @@
+{
+	"events": [
+		{
+			"id": "awper_trapped",
+			"text": "Ваш AWPer зажат на позиции. Противник знает где он.",
+			"type": "combat",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["awper"],
+			"choices": [
+				{
+					"id": "retreat",
+					"text": "Отступить",
+					"skill_check": "game_sense",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.05,
+					"risk": 0.2
+				},
+				{
+					"id": "aggressive_peek",
+					"text": "Агрессивный пик",
+					"skill_check": "aim",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.2,
+					"risk": 0.5
+				},
+				{
+					"id": "flash_support",
+					"text": "Флешка от тиммейта",
+					"skill_check": "utility",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.1,
+					"risk": 0.3
+				}
+			]
+		},
+		{
+			"id": "entry_down",
+			"text": "Entry убит на входе! Команда в замешательстве.",
+			"type": "combat",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["entry"],
+			"choices": [
+				{
+					"id": "continue_push",
+					"text": "Продолжить атаку",
+					"skill_check": "aim",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.25,
+					"risk": 0.55
+				},
+				{
+					"id": "fall_back",
+					"text": "Отступить и перегруппироваться",
+					"skill_check": "communication",
+					"success_bonus": 0.05,
+					"fail_penalty": -0.05,
+					"risk": 0.15
+				},
+				{
+					"id": "lurker_flank",
+					"text": "Lurker обходит с фланга",
+					"skill_check": "game_sense",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.4
+				}
+			]
+		},
+		{
+			"id": "clutch_1v2",
+			"text": "Клатч 1v2! Ваш игрок остался один против двоих.",
+			"type": "clutch",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "aggression",
+					"text": "Агрессивная игра",
+					"skill_check": "aim",
+					"success_bonus": 0.35,
+					"fail_penalty": -0.1,
+					"risk": 0.6
+				},
+				{
+					"id": "play_time",
+					"text": "Играть на время",
+					"skill_check": "clutch",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.1,
+					"risk": 0.4
+				},
+				{
+					"id": "fake_defuse",
+					"text": "Фейк-дефьюз",
+					"skill_check": "game_sense",
+					"success_bonus": 0.3,
+					"fail_penalty": -0.15,
+					"risk": 0.5
+				}
+			]
+		},
+		{
+			"id": "clutch_1v1",
+			"text": "Финальная дуэль 1v1! Всё решается сейчас.",
+			"type": "clutch",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "wide_peek",
+					"text": "Широкий пик",
+					"skill_check": "aim",
+					"success_bonus": 0.3,
+					"fail_penalty": -0.1,
+					"risk": 0.5
+				},
+				{
+					"id": "hold_angle",
+					"text": "Держать угол",
+					"skill_check": "clutch",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.1,
+					"risk": 0.4
+				}
+			]
+		},
+		{
+			"id": "bomb_plant_pressure",
+			"text": "Бомба установлена, но противник уже на сайте!",
+			"type": "combat",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "hold_positions",
+					"text": "Держать позиции",
+					"skill_check": "discipline",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.35
+				},
+				{
+					"id": "aggressive_peek",
+					"text": "Агрессивный пик",
+					"skill_check": "aim",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.2,
+					"risk": 0.5
+				},
+				{
+					"id": "utility_delay",
+					"text": "Задержать утилитой",
+					"skill_check": "utility",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.05,
+					"risk": 0.2
+				}
+			]
+		},
+		{
+			"id": "support_clutch",
+			"text": "Support неожиданно остался последним! Не его роль, но выбора нет.",
+			"type": "clutch",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["support"],
+			"choices": [
+				{
+					"id": "utility_play",
+					"text": "Использовать утилиту",
+					"skill_check": "utility",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.1,
+					"risk": 0.35
+				},
+				{
+					"id": "unexpected_aggro",
+					"text": "Неожиданная агрессия",
+					"skill_check": "aim",
+					"success_bonus": 0.3,
+					"fail_penalty": -0.2,
+					"risk": 0.55
+				}
+			]
+		},
+		{
+			"id": "igl_call",
+			"text": "IGL делает неочевидный колл. Команда сомневается.",
+			"type": "tactical",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["igl"],
+			"choices": [
+				{
+					"id": "trust_igl",
+					"text": "Довериться коллу",
+					"skill_check": "discipline",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.4
+				},
+				{
+					"id": "adapt_call",
+					"text": "Адаптировать план",
+					"skill_check": "communication",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.05,
+					"risk": 0.2
+				}
+			]
+		},
+		{
+			"id": "eco_force_decision",
+			"text": "Эко-раунд. Форсить или копить?",
+			"type": "economy",
+			"round_types": ["eco"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "full_eco",
+					"text": "Полное эко",
+					"skill_check": "discipline",
+					"success_bonus": 0.0,
+					"fail_penalty": 0.0,
+					"risk": 0.0,
+					"economy_effect": "save"
+				},
+				{
+					"id": "force_buy",
+					"text": "Форс-бай",
+					"skill_check": "aim",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.1,
+					"risk": 0.5,
+					"economy_effect": "spend"
+				}
+			]
+		},
+		{
+			"id": "pistol_aggression",
+			"text": "Пистолетный раунд. Какую стратегию выбираем?",
+			"type": "tactical",
+			"round_types": ["pistol"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "fast_execute",
+					"text": "Быстрый заход",
+					"skill_check": "aim",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.45
+				},
+				{
+					"id": "default_spread",
+					"text": "Дефолтное распределение",
+					"skill_check": "game_sense",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.05,
+					"risk": 0.2
+				},
+				{
+					"id": "stack_site",
+					"text": "Стакнуть сайт",
+					"skill_check": "communication",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.1,
+					"risk": 0.35
+				}
+			]
+		},
+		{
+			"id": "tilting_player",
+			"text": "Один из игроков начинает тильтовать после серии смертей.",
+			"type": "mental",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "call_timeout",
+					"text": "Взять тайм-аут",
+					"skill_check": "tilt_resistance",
+					"success_bonus": 0.1,
+					"fail_penalty": 0.0,
+					"risk": 0.1,
+					"uses_timeout": true
+				},
+				{
+					"id": "encourage",
+					"text": "Поддержать игрока",
+					"skill_check": "communication",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.05,
+					"risk": 0.2
+				},
+				{
+					"id": "ignore",
+					"text": "Продолжить играть",
+					"skill_check": "discipline",
+					"success_bonus": 0.0,
+					"fail_penalty": -0.1,
+					"risk": 0.3
+				}
+			]
+		},
+		{
+			"id": "enemy_read",
+			"text": "Кажется, противник прочитал нашу тактику.",
+			"type": "tactical",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"choices": [
+				{
+					"id": "change_tactic",
+					"text": "Сменить тактику",
+					"skill_check": "game_sense",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.1,
+					"risk": 0.3
+				},
+				{
+					"id": "double_down",
+					"text": "Продолжить в том же духе",
+					"skill_check": "discipline",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.15,
+					"risk": 0.4
+				}
+			]
+		},
+		{
+			"id": "lurker_info",
+			"text": "Lurker собрал важную информацию о позициях врага.",
+			"type": "tactical",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["lurker"],
+			"choices": [
+				{
+					"id": "use_info",
+					"text": "Использовать информацию для атаки",
+					"skill_check": "communication",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.05,
+					"risk": 0.25
+				},
+				{
+					"id": "lurker_attack",
+					"text": "Lurker атакует в спину",
+					"skill_check": "game_sense",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.15,
+					"risk": 0.45
+				}
+			]
+		},
+		{
+			"id": "momentum_shift",
+			"text": "Мы набрали серию побед! Противник деморализован.",
+			"type": "momentum",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"trigger_condition": "win_streak_3",
+			"choices": [
+				{
+					"id": "press_advantage",
+					"text": "Давить преимущество",
+					"skill_check": "motivation",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.1,
+					"risk": 0.35
+				},
+				{
+					"id": "stay_calm",
+					"text": "Оставаться спокойными",
+					"skill_check": "discipline",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.05,
+					"risk": 0.15
+				}
+			]
+		},
+		{
+			"id": "close_round",
+			"text": "Счёт равный, напряжение растёт.",
+			"type": "pressure",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"trigger_condition": "close_score",
+			"choices": [
+				{
+					"id": "calculated_play",
+					"text": "Играть по учебнику",
+					"skill_check": "pressure",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.1,
+					"risk": 0.3
+				},
+				{
+					"id": "unexpected_move",
+					"text": "Неожиданный ход",
+					"skill_check": "game_sense",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.45
+				}
+			]
+		},
+		{
+			"id": "technical_issue",
+			"text": "У одного из игроков технические проблемы!",
+			"type": "random",
+			"round_types": ["normal", "gun", "eco"],
+			"required_roles": [],
+			"probability": 0.05,
+			"choices": [
+				{
+					"id": "tactical_pause",
+					"text": "Тактическая пауза",
+					"skill_check": "discipline",
+					"success_bonus": 0.0,
+					"fail_penalty": -0.05,
+					"risk": 0.1
+				},
+				{
+					"id": "continue_playing",
+					"text": "Продолжать 4v5",
+					"skill_check": "clutch",
+					"success_bonus": 0.1,
+					"fail_penalty": -0.2,
+					"risk": 0.6
+				}
+			]
+		},
+		{
+			"id": "perfect_utility",
+			"text": "Идеальная комбинация утилит открывает сайт!",
+			"type": "positive",
+			"round_types": ["normal", "gun"],
+			"required_roles": ["support"],
+			"choices": [
+				{
+					"id": "capitalize",
+					"text": "Немедленно ворваться",
+					"skill_check": "aim",
+					"success_bonus": 0.25,
+					"fail_penalty": -0.1,
+					"risk": 0.3
+				},
+				{
+					"id": "methodical",
+					"text": "Методично зачистить",
+					"skill_check": "communication",
+					"success_bonus": 0.15,
+					"fail_penalty": -0.05,
+					"risk": 0.15
+				}
+			]
+		},
+		{
+			"id": "crucial_round",
+			"text": "Решающий раунд матча! Всё на кону.",
+			"type": "pressure",
+			"round_types": ["normal", "gun"],
+			"required_roles": [],
+			"trigger_condition": "match_point",
+			"choices": [
+				{
+					"id": "trust_process",
+					"text": "Довериться подготовке",
+					"skill_check": "pressure",
+					"success_bonus": 0.2,
+					"fail_penalty": -0.15,
+					"risk": 0.35
+				},
+				{
+					"id": "all_in",
+					"text": "Ва-банк",
+					"skill_check": "clutch",
+					"success_bonus": 0.3,
+					"fail_penalty": -0.25,
+					"risk": 0.55
+				}
+			]
+		}
+	],
+	"round_types": {
+		"pistol": "Пистолетный раунд (1, 13)",
+		"eco": "Эко-раунд (после проигрыша)",
+		"force": "Форс-бай",
+		"gun": "Полная закупка",
+		"normal": "Обычный раунд"
+	}
+}

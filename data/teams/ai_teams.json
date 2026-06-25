@@ -1,0 +1,59 @@
+{
+	"leagues_data": {
+		"Champions": [
+			{"id": "t1_aura", "name": "Aura Vincere", "logo": "⚡", "style": "balanced", "strength": "strong"},
+			{"id": "t1_phase", "name": "Phase Clan", "logo": "🔴", "style": "aggressive", "strength": "strong"},
+			{"id": "t1_samurai", "name": "Samurai G", "logo": "⚔️", "style": "tactical", "strength": "strong"},
+			{"id": "t1_hydra", "name": "Team Hydra", "logo": "💧", "style": "balanced", "strength": "strong"},
+			{"id": "t1_nimbus", "name": "Nimbus 9", "logo": "☁️", "style": "tactical", "strength": "strong"},
+			{"id": "t1_spiritus", "name": "Spiritus.pro", "logo": "🐻", "style": "aggressive", "strength": "strong"},
+			{"id": "t1_velocity", "name": "Velocity", "logo": "🐝", "style": "aggressive", "strength": "strong"},
+			{"id": "t1_stellar", "name": "Stellaris", "logo": "🌟", "style": "tactical", "strength": "strong"}
+		],
+		"Elite": [
+			{"id": "t2_valiant", "name": "Valiant", "logo": "🛡️", "style": "balanced", "strength": "strong"},
+			{"id": "t2_vermin", "name": "Vermin", "logo": "🐭", "style": "tactical", "strength": "medium"},
+			{"id": "t2_shadow", "name": "Shadow Ninjas", "logo": "🥷", "style": "tactical", "strength": "medium"},
+			{"id": "t2_giants", "name": "GIANTS", "logo": "🧱", "style": "balanced", "strength": "medium"},
+			{"id": "t2_synergy", "name": "Synergy", "logo": "🌀", "style": "balanced", "strength": "medium"},
+			{"id": "t2_hawks", "name": "Desert Hawks", "logo": "🦅", "style": "aggressive", "strength": "medium"},
+			{"id": "t2_fnx", "name": "Phoenix Flame", "logo": "🔥", "style": "aggressive", "strength": "medium"},
+			{"id": "t2_vanguard", "name": "Valor Guard", "logo": "🏛️", "style": "tactical", "strength": "medium"}
+		],
+		"Pro": [
+			{"id": "t3_blade", "name": "Blade Masters", "logo": "🔪", "style": "aggressive", "strength": "medium"},
+			{"id": "t3_inferno", "name": "Infernal Flame", "logo": "🔥", "style": "aggressive", "strength": "medium"},
+			{"id": "t3_sector9", "name": "Sector 9", "logo": "🧿", "style": "balanced", "strength": "medium"},
+			{"id": "t3_empire", "name": "Empire State", "logo": "👑", "style": "tactical", "strength": "medium"},
+			{"id": "t3_horde", "name": "Steppe Horde", "logo": "🐎", "style": "aggressive", "strength": "medium"},
+			{"id": "t3_predator", "name": "Predators", "logo": "🐾", "style": "balanced", "strength": "medium"},
+			{"id": "t3_nova", "name": "Nova Rising", "logo": "✨", "style": "balanced", "strength": "medium"},
+			{"id": "t3_junior", "name": "Ghost Junior", "logo": "👻", "style": "tactical", "strength": "medium"}
+		],
+		"Rising": [
+			{"id": "t4_dawn", "name": "Dawn Watch", "logo": "🌅", "style": "balanced", "strength": "weak"},
+			{"id": "t4_alloy", "name": "Alloy Metal", "logo": "🔩", "style": "tactical", "strength": "weak"},
+			{"id": "t4_rebels", "name": "Insurgents", "logo": "✊", "style": "aggressive", "strength": "weak"},
+			{"id": "t4_anomaly", "name": "Anomaly", "logo": "☢️", "style": "balanced", "strength": "weak"},
+			{"id": "t4_easy", "name": "Easy Win", "logo": "🎯", "style": "balanced", "strength": "weak"},
+			{"id": "t4_sanguine", "name": "Sanguine", "logo": "🩸", "style": "tactical", "strength": "weak"},
+			{"id": "t4_alliance", "name": "Global Alliance", "logo": "🤝", "style": "balanced", "strength": "weak"},
+			{"id": "t4_retina", "name": "Retina", "logo": "👁️", "style": "tactical", "strength": "weak"}
+		],
+		"Open": [
+			{"id": "t5_link", "name": "Nexus Link", "logo": "🔗", "style": "balanced", "strength": "weak"},
+			{"id": "t5_void", "name": "Null Void", "logo": "🌑", "style": "tactical", "strength": "weak"},
+			{"id": "t5_chaos", "name": "Entropy Chaos", "logo": "🌀", "style": "aggressive", "strength": "weak"},
+			{"id": "t5_breach", "name": "Breach Point", "logo": "🚪", "style": "balanced", "strength": "weak"},
+			{"id": "t5_node", "name": "Network Node", "logo": "📍", "style": "tactical", "strength": "weak"},
+			{"id": "t5_permian", "name": "Permian", "logo": "🦕", "style": "balanced", "strength": "weak"},
+			{"id": "t5_five", "name": "Five Hundred", "logo": "💰", "style": "aggressive", "strength": "weak"},
+			{"id": "t5_mountain", "name": "Peak Mountain", "logo": "🏔️", "style": "balanced", "strength": "weak"}
+		]
+	},
+	"strength_skill_ranges": {
+		"weak": {"min": 25, "max": 45},
+		"medium": {"min": 45, "max": 65},
+		"strong": {"min": 65, "max": 85}
+	}
+}

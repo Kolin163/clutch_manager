@@ -1,0 +1,19 @@
+{
+	"maps": [
+		{"id": "dust", "name": "Dust", "ct_advantage": 0.0, "style": "balanced", "favors_tactics": ["default", "split"], "sites": ["A", "B"], "description": "Сбалансированная карта с длинными перестрелками"},
+		{"id": "inferno", "name": "Inferno", "ct_advantage": 0.05, "style": "tactical", "favors_tactics": ["slow_execute"], "sites": ["A", "B"], "description": "Тактическая карта, важна утилита"},
+		{"id": "mirage", "name": "Mirage", "ct_advantage": 0.0, "style": "balanced", "favors_tactics": ["default", "split"], "sites": ["A", "B"], "description": "Классическая сбалансированная карта"},
+		{"id": "nuke", "name": "Nuke", "ct_advantage": 0.1, "style": "ct_sided", "favors_tactics": ["stack", "aggressive_ct"], "sites": ["A", "B"], "description": "CT-сайдовая карта с вертикальным геймплеем"},
+		{"id": "overpass", "name": "Overpass", "ct_advantage": 0.05, "style": "tactical", "favors_tactics": ["slow_execute", "passive"], "sites": ["A", "B"], "description": "Большая карта с множеством позиций"},
+		{"id": "vertigo", "name": "Vertigo", "ct_advantage": -0.05, "style": "t_sided", "favors_tactics": ["rush", "split"], "sites": ["A", "B"], "description": "T-сайдовая карта с быстрыми раундами"},
+		{"id": "ancient", "name": "Ancient", "ct_advantage": 0.05, "style": "tactical", "favors_tactics": ["slow_execute", "retake"], "sites": ["A", "B"], "description": "Тактическая карта в руинах храма"},
+		{"id": "anubis", "name": "Anubis", "ct_advantage": 0.0, "style": "balanced", "favors_tactics": ["default", "aggressive_ct"], "sites": ["A", "B"], "description": "Египетская карта со средним темпом"},
+		{"id": "train", "name": "Train", "ct_advantage": 0.08, "style": "ct_sided", "favors_tactics": ["stack", "slow_execute"], "sites": ["A", "B"], "description": "CT-сайдовая карта с открытыми пространствами"},
+		{"id": "cache", "name": "Cache", "ct_advantage": 0.0, "style": "balanced", "favors_tactics": ["rush", "default"], "sites": ["A", "B"], "description": "Быстрая сбалансированная карта"},
+		{"id": "cobblestone", "name": "Cobblestone", "ct_advantage": 0.03, "style": "balanced", "favors_tactics": ["split", "slow_execute"], "sites": ["A", "B"], "description": "Большая карта в средневековом замке"},
+		{"id": "tuscan", "name": "Tuscan", "ct_advantage": -0.03, "style": "t_sided", "favors_tactics": ["rush", "aggressive_ct"], "sites": ["A", "B"], "description": "T-сайдовая карта в итальянском городке"},
+		{"id": "season", "name": "Season", "ct_advantage": 0.0, "style": "balanced", "favors_tactics": ["default", "fake"], "sites": ["A", "B"], "description": "Азиатская карта со множеством углов"},
+		{"id": "canals", "name": "Canals", "ct_advantage": 0.05, "style": "tactical", "favors_tactics": ["passive", "retake"], "sites": ["A", "B"], "description": "Венецианские каналы, длинные линии прострела"},
+		{"id": "office", "name": "Office", "ct_advantage": -0.08, "style": "t_sided", "favors_tactics": ["rush", "stack"], "sites": ["A", "B"], "description": "Хостейдж-стиль, T-сайдовая"}
+	]
+}

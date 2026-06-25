@@ -1,0 +1,218 @@
+{
+	"presets": [
+		{
+			"id": "aggression_meta",
+			"name": "Мета агрессии",
+			"name_en": "Aggression Meta",
+			"description": "Агрессивные тактики сильнее, Entry Fragger — ключевая роль",
+			"tactic_modifiers": {
+				"rush": 0.20,
+				"aggressive_ct": 0.15,
+				"split": 0.10,
+				"slow_execute": -0.10,
+				"passive": -0.15
+			},
+			"role_modifiers": {
+				"entry": 8,
+				"awper": -3,
+				"lurker": 3
+			},
+			"skill_modifiers": {
+				"aim": 0.10,
+				"clutch": 0.05
+			},
+			"style": "aggression"
+		},
+		{
+			"id": "control_meta",
+			"name": "Мета контроля",
+			"name_en": "Control Meta",
+			"description": "Тактические тактики доминируют, утилиты решают",
+			"tactic_modifiers": {
+				"slow_execute": 0.20,
+				"passive": 0.15,
+				"retake": 0.15,
+				"rush": -0.15,
+				"aggressive_ct": -0.10
+			},
+			"role_modifiers": {
+				"support": 8,
+				"igl": 5,
+				"entry": -3
+			},
+			"skill_modifiers": {
+				"utility": 0.12,
+				"game_sense": 0.08
+			},
+			"style": "control"
+		},
+		{
+			"id": "awp_meta",
+			"name": "Мета снайперов",
+			"name_en": "AWP Meta",
+			"description": "Снайперка имба, AWPer — главная звезда команды",
+			"tactic_modifiers": {
+				"default": 0.10,
+				"passive": 0.10,
+				"rush": -0.05
+			},
+			"role_modifiers": {
+				"awper": 12,
+				"support": 3,
+				"entry": -5
+			},
+			"skill_modifiers": {
+				"aim": 0.15,
+				"game_sense": 0.05
+			},
+			"style": "awp"
+		},
+		{
+			"id": "clutch_meta",
+			"name": "Мета клатчей",
+			"name_en": "Clutch Meta",
+			"description": "Индивидуальное мастерство решает, клатчи выигрывают раунды",
+			"tactic_modifiers": {
+				"default": 0.05,
+				"force_buy": 0.15,
+				"split": 0.10,
+				"stack": -0.10
+			},
+			"role_modifiers": {
+				"lurker": 8,
+				"entry": 5,
+				"support": -5
+			},
+			"skill_modifiers": {
+				"clutch": 0.15,
+				"aim": 0.08
+			},
+			"style": "clutch"
+		},
+		{
+			"id": "team_meta",
+			"name": "Мета командной игры",
+			"name_en": "Teamplay Meta",
+			"description": "Коммуникация и координация важнее индивидуального скилла",
+			"tactic_modifiers": {
+				"slow_execute": 0.15,
+				"split": 0.15,
+				"fake": 0.10,
+				"rush": -0.10,
+				"force_buy": -0.15
+			},
+			"role_modifiers": {
+				"igl": 10,
+				"support": 5,
+				"lurker": -3
+			},
+			"skill_modifiers": {
+				"communication": 0.15,
+				"discipline": 0.10
+			},
+			"style": "teamplay"
+		},
+		{
+			"id": "eco_meta",
+			"name": "Мета экономии",
+			"name_en": "Economy Meta",
+			"description": "Эко-раунды стали опаснее, форс-баи эффективнее",
+			"tactic_modifiers": {
+				"force_buy": 0.25,
+				"default": 0.05,
+				"rush": 0.05,
+				"stack": -0.10
+			},
+			"role_modifiers": {
+				"entry": 5,
+				"lurker": 5
+			},
+			"skill_modifiers": {
+				"aim": 0.05,
+				"clutch": 0.10
+			},
+			"style": "economy"
+		},
+		{
+			"id": "utility_meta",
+			"name": "Мета утилит",
+			"name_en": "Utility Meta",
+			"description": "Гранаты и молотовы невероятно сильны, Support — MVP",
+			"tactic_modifiers": {
+				"slow_execute": 0.20,
+				"retake": 0.15,
+				"stack": 0.10,
+				"rush": -0.15,
+				"aggressive_ct": -0.10
+			},
+			"role_modifiers": {
+				"support": 10,
+				"igl": 3,
+				"entry": -5,
+				"awper": -3
+			},
+			"skill_modifiers": {
+				"utility": 0.20,
+				"game_sense": 0.05
+			},
+			"style": "utility"
+		},
+		{
+			"id": "balanced_meta",
+			"name": "Сбалансированная мета",
+			"name_en": "Balanced Meta",
+			"description": "Нет ярко выраженного доминирования, все стили жизнеспособны",
+			"tactic_modifiers": {},
+			"role_modifiers": {},
+			"skill_modifiers": {},
+			"style": "balanced"
+		},
+		{
+			"id": "fast_meta",
+			"name": "Мета быстрых раундов",
+			"name_en": "Fast Rounds Meta",
+			"description": "Раунды решаются быстро, первый контакт критичен",
+			"tactic_modifiers": {
+				"rush": 0.20,
+				"stack": 0.15,
+				"aggressive_ct": 0.10,
+				"slow_execute": -0.20,
+				"passive": -0.10
+			},
+			"role_modifiers": {
+				"entry": 10,
+				"awper": 5,
+				"lurker": -5,
+				"igl": -3
+			},
+			"skill_modifiers": {
+				"aim": 0.15
+			},
+			"style": "fast"
+		},
+		{
+			"id": "igl_meta",
+			"name": "Мета тактических гениев",
+			"name_en": "IGL Meta",
+			"description": "Побеждает тот, кто лучше читает игру",
+			"tactic_modifiers": {
+				"fake": 0.20,
+				"split": 0.15,
+				"slow_execute": 0.10,
+				"rush": -0.15,
+				"force_buy": -0.10
+			},
+			"role_modifiers": {
+				"igl": 12,
+				"lurker": 5,
+				"entry": -5
+			},
+			"skill_modifiers": {
+				"game_sense": 0.15,
+				"discipline": 0.10,
+				"communication": 0.08
+			},
+			"style": "tactical"
+		}
+	]
+}

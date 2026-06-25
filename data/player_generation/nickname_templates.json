@@ -1,0 +1,23 @@
+{
+	"templates": [
+		{
+			"type": "noun",
+			"words": ["Ghost", "Viper", "Lynx", "Phoenix", "Raven", "Wolf", "Storm", "Blade", "Frost", "Shadow", "Hawk", "Tiger", "Cobra", "Panther", "Spectre", "Reaper", "Hunter", "Ninja", "Sniper", "Ace", "Demon", "Angel", "Dragon", "Thunder", "Lightning", "Flame", "Ice", "Steel", "Iron", "Titan"]
+		},
+		{
+			"type": "adjective_noun",
+			"adjectives": ["Cold", "Dark", "Wild", "Fast", "Silent", "Crazy", "Mad", "Evil", "Holy", "Dead", "Black", "White", "Red", "Blue", "Neo", "Ultra", "Mega", "Super", "Hyper", "Toxic"],
+			"nouns": ["Fire", "Wave", "Shot", "Kill", "Star", "Moon", "Sun", "King", "God", "Lord", "Hand", "Eye", "Mind", "Soul", "Heart", "Blood", "Bone", "Skull", "Fist", "Claw"]
+		},
+		{
+			"type": "leet_name",
+			"patterns": ["Z3ro", "Fl0w", "Cr4sh", "V0id", "St4r", "P0int", "K1ng", "G0d", "B0ss", "N0de", "R0ot", "H4ck", "D3ad"]
+		},
+		{
+			"type": "short",
+			"words": ["Nex", "Jks", "Rez", "Twi", "Kyo", "Max", "Rex", "Zed", "Kai", "Neo", "Axe", "Jet", "Fox", "Hex", "Pax", "Dex", "Ven", "Zap", "Ryu", "Ken"]
+		}
+	],
+	"number_suffixes": ["", "1", "2", "3", "7", "9", "13", "27", "42", "69", "99", "00", "01", "77", "88"],
+	"special_chars": ["", "_", "-", "x", "X", ".", ""]
+}

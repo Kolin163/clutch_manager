@@ -1,0 +1,54 @@
+{
+	"events": [
+		{"id": "sponsor_offer", "type": "managed", "category": "economy", "text": "Новый спонсор заинтересован в вашей команде!", "trigger": "any", "probability": 0.3, "choices": [
+			{"id": "accept", "text": "Рассмотреть предложение", "effect": {"action": "open_sponsors"}, "description": "Перейти к экрану спонсоров"},
+			{"id": "decline", "text": "Не сейчас", "effect": {}, "description": "Пропустить"}
+		]},
+		{"id": "talent_trial", "type": "managed", "category": "roster", "text": "Молодой талант просит о пробных играх!", "trigger": "any", "probability": 0.25, "choices": [
+			{"id": "accept", "text": "Дать шанс ($500)", "effect": {"action": "add_talent_to_pool", "cost": 500}, "description": "Молодой талант появится в пуле агентов"},
+			{"id": "decline", "text": "Отказать", "effect": {}, "description": "Ничего не произойдёт"}
+		]},
+		{"id": "bootcamp_offer", "type": "managed", "category": "training", "text": "Предложение буткемпа: интенсивные тренировки на 3 дня.", "trigger": "any", "probability": 0.2, "choices": [
+			{"id": "accept", "text": "Отправить команду ($1000)", "effect": {"action": "bootcamp", "cost": 1000, "skill_boost": 3, "mental_penalty": 5}, "description": "+3 к скиллам, -5 к ментальным"},
+			{"id": "decline", "text": "Пропустить", "effect": {}, "description": ""}
+		]},
+		{"id": "player_conflict", "type": "unmanaged", "category": "mental", "text": "Два игрока поссорились из-за тактики.", "trigger": "roster_full", "probability": 0.15, "effect": {"action": "conflict", "morale_penalty": 10, "comm_penalty": 3}},
+		{"id": "viral_clip", "type": "unmanaged", "category": "popularity", "text": "Клип вашего игрока завирусился! +популярность.", "trigger": "any", "probability": 0.12, "effect": {"action": "viral", "popularity_boost": 15, "player_popularity": 10}},
+		{"id": "server_crash", "type": "unmanaged", "category": "base", "text": "Серверная вышла из строя! Тренировки приостановлены.", "trigger": "has_server_room", "probability": 0.08, "effect": {"action": "server_down", "training_skip": true}},
+		{"id": "interview_request", "type": "managed", "category": "popularity", "text": "Журналист хочет взять интервью у вашего лучшего игрока.", "trigger": "any", "probability": 0.2, "choices": [
+			{"id": "accept", "text": "Согласиться", "effect": {"action": "interview", "popularity_boost": 8, "fatigue": 5}, "description": "+8 популярность, +5 усталость"},
+			{"id": "decline", "text": "Отказать", "effect": {}, "description": ""}
+		]},
+		{"id": "fan_meetup", "type": "managed", "category": "popularity", "text": "Фанаты просят организовать встречу с командой.", "trigger": "popularity_above_20", "probability": 0.15, "choices": [
+			{"id": "accept", "text": "Организовать ($300)", "effect": {"action": "meetup", "cost": 300, "popularity_boost": 12, "morale_boost": 5}, "description": "+12 популярность, +5 моральный дух"},
+			{"id": "decline", "text": "Не сейчас", "effect": {}, "description": ""}
+		]},
+		{"id": "equipment_deal", "type": "managed", "category": "economy", "text": "Поставщик оборудования предлагает скидку на апгрейд.", "trigger": "any", "probability": 0.15, "choices": [
+			{"id": "accept", "text": "Купить со скидкой ($800)", "effect": {"action": "equipment_discount", "cost": 800, "training_bonus": 2}, "description": "Временный +2 к тренировкам"},
+			{"id": "decline", "text": "Не нужно", "effect": {}, "description": ""}
+		]},
+		{"id": "injury_scare", "type": "unmanaged", "category": "roster", "text": "Один из игроков жалуется на боль в запястье.", "trigger": "roster_full", "probability": 0.1, "effect": {"action": "injury_scare", "aim_penalty": 5, "duration": 2}},
+		{"id": "rival_taunt", "type": "managed", "category": "mental", "text": "Капитан соперника публично высмеял вашу команду.", "trigger": "any", "probability": 0.12, "choices": [
+			{"id": "respond", "text": "Ответить в соцсетях", "effect": {"action": "taunt_response", "motivation_boost": 5, "popularity_boost": 5, "risk_tilt": true}, "description": "+5 мотивация, +5 популярность, риск тильта"},
+			{"id": "ignore", "text": "Проигнорировать", "effect": {"action": "ignore_taunt", "discipline_boost": 3}, "description": "+3 дисциплина"}
+		]},
+		{"id": "donation_stream", "type": "unmanaged", "category": "economy", "text": "Крупный донат на стриме команды!", "trigger": "has_stream_room", "probability": 0.1, "effect": {"action": "donation", "money": 800}},
+		{"id": "team_dinner", "type": "managed", "category": "mental", "text": "Менеджер предлагает организовать командный ужин.", "trigger": "any", "probability": 0.2, "choices": [
+			{"id": "accept", "text": "Организовать ($200)", "effect": {"action": "dinner", "cost": 200, "morale_boost": 10, "comm_boost": 3}, "description": "+10 моральный дух, +3 коммуникация"},
+			{"id": "decline", "text": "Не сейчас", "effect": {}, "description": ""}
+		]},
+		{"id": "roster_leak", "type": "unmanaged", "category": "roster", "text": "Утечка: информация о вашей тактике попала к сопернику.", "trigger": "any", "probability": 0.08, "effect": {"action": "tactic_leak", "next_match_penalty": 0.1}},
+		{"id": "lucky_streak", "type": "unmanaged", "category": "mental", "text": "Команда на позитиве после серии побед!", "trigger": "win_streak_2", "probability": 0.3, "effect": {"action": "lucky_streak", "morale_boost": 8, "motivation_boost": 3}},
+		{"id": "slump_mood", "type": "unmanaged", "category": "mental", "text": "Атмосфера в команде напряжённая после поражений.", "trigger": "lose_streak_2", "probability": 0.35, "effect": {"action": "slump", "morale_penalty": 8, "tilt_risk": true}},
+		{"id": "media_attention", "type": "unmanaged", "category": "popularity", "text": "СМИ обратили внимание на вашу команду!", "trigger": "league_top_3", "probability": 0.2, "effect": {"action": "media", "popularity_boost": 10}},
+		{"id": "scout_report", "type": "managed", "category": "roster", "text": "Скаут нашёл перспективного игрока в другом регионе.", "trigger": "has_analyst", "probability": 0.15, "choices": [
+			{"id": "investigate", "text": "Отправить аналитика ($400)", "effect": {"action": "scout_talent", "cost": 400}, "description": "Добавит сильного агента в пул"},
+			{"id": "skip", "text": "Пропустить", "effect": {}, "description": ""}
+		]},
+		{"id": "contract_dispute", "type": "managed", "category": "roster", "text": "Игрок недоволен условиями контракта и хочет прибавку.", "trigger": "roster_full", "probability": 0.12, "choices": [
+			{"id": "raise", "text": "Повысить зарплату (+20%)", "effect": {"action": "salary_raise", "raise_percent": 20, "morale_boost": 10}, "description": "Зарплата +20%, моральный дух +10"},
+			{"id": "refuse", "text": "Отказать", "effect": {"action": "refuse_raise", "morale_penalty": 15, "motivation_penalty": 5}, "description": "Моральный дух -15, мотивация -5"}
+		]},
+		{"id": "energy_drink_deal", "type": "unmanaged", "category": "economy", "text": "Компания прислала бесплатные энергетики для команды.", "trigger": "any", "probability": 0.15, "effect": {"action": "energy_drinks", "fatigue_recovery": 10}}
+	]
+}

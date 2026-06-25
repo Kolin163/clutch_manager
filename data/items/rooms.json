@@ -1,0 +1,189 @@
+{
+	"rooms": [
+		{
+			"id": "training_room",
+			"name": "Тренировочная",
+			"name_en": "Training Room",
+			"description": "Ускоряет рост боевых скиллов игроков",
+			"effect_type": "training_speed",
+			"base_level": 1,
+			"levels": [
+				{
+					"level": 1,
+					"cost": 2000,
+					"effect_value": 0.15,
+					"description": "Базовые тренажёры (+15% к скорости роста)"
+				},
+				{
+					"level": 2,
+					"cost": 5000,
+					"effect_value": 0.30,
+					"description": "Продвинутые тренажёры (+30% к скорости роста)"
+				},
+				{
+					"level": 3,
+					"cost": 12000,
+					"effect_value": 0.50,
+					"description": "Элитное оборудование (+50% к скорости роста)"
+				}
+			],
+			"min_base_level": 1
+		},
+		{
+			"id": "server_room",
+			"name": "Серверная",
+			"name_en": "Server Room",
+			"description": "Повышает качество тренировок (бонус к максимальному приросту)",
+			"effect_type": "training_quality",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 3000,
+					"effect_value": 0.10,
+					"description": "Базовый сервер (+10% к качеству тренировок)"
+				},
+				{
+					"level": 2,
+					"cost": 7000,
+					"effect_value": 0.25,
+					"description": "Выделенный сервер (+25% к качеству тренировок)"
+				},
+				{
+					"level": 3,
+					"cost": 15000,
+					"effect_value": 0.40,
+					"description": "Дата-центр (+40% к качеству тренировок)"
+				}
+			],
+			"min_base_level": 1
+		},
+		{
+			"id": "stream_room",
+			"name": "Стримерская",
+			"name_en": "Stream Room",
+			"description": "Приносит доход от стримов и повышает популярность",
+			"effect_type": "stream_income",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 2500,
+					"effect_value": 100,
+					"description": "Базовая стримерская (+$100/матчдей)"
+				},
+				{
+					"level": 2,
+					"cost": 6000,
+					"effect_value": 250,
+					"description": "Студия стримов (+$250/матчдей)"
+				},
+				{
+					"level": 3,
+					"cost": 14000,
+					"effect_value": 500,
+					"description": "Медиа-центр (+$500/матчдей)"
+				}
+			],
+			"min_base_level": 2
+		},
+		{
+			"id": "rest_zone",
+			"name": "Зона отдыха",
+			"name_en": "Rest Zone",
+			"description": "Ускоряет восстановление ментала игроков между матчами",
+			"effect_type": "mental_recovery",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 1500,
+					"effect_value": 0.20,
+					"description": "Диван и кофемашина (+20% восстановление ментала)"
+				},
+				{
+					"level": 2,
+					"cost": 4000,
+					"effect_value": 0.40,
+					"description": "Игровая зона (+40% восстановление ментала)"
+				},
+				{
+					"level": 3,
+					"cost": 10000,
+					"effect_value": 0.60,
+					"description": "Полноценный лаунж (+60% восстановление ментала)"
+				}
+			],
+			"min_base_level": 1
+		},
+		{
+			"id": "manager_office",
+			"name": "Офис менеджера",
+			"name_en": "Manager Office",
+			"description": "Открывает слоты для найма персонала",
+			"effect_type": "staff_slots",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 2000,
+					"effect_value": 1,
+					"description": "Маленький офис (1 слот персонала)"
+				},
+				{
+					"level": 2,
+					"cost": 5000,
+					"effect_value": 2,
+					"description": "Офис (+2 слота персонала)"
+				},
+				{
+					"level": 3,
+					"cost": 12000,
+					"effect_value": 4,
+					"description": "Большой офис (все 4 слота персонала)"
+				}
+			],
+			"min_base_level": 2
+		},
+		{
+			"id": "meeting_room",
+			"name": "Переговорная",
+			"name_en": "Meeting Room",
+			"description": "Улучшает условия контрактов (снижает запросы игроков)",
+			"effect_type": "contract_discount",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 2500,
+					"effect_value": 0.05,
+					"description": "Переговорная (-5% к запросам зарплат)"
+				},
+				{
+					"level": 2,
+					"cost": 6000,
+					"effect_value": 0.12,
+					"description": "Конференц-зал (-12% к запросам зарплат)"
+				},
+				{
+					"level": 3,
+					"cost": 13000,
+					"effect_value": 0.20,
+					"description": "VIP-переговорная (-20% к запросам зарплат)"
+				}
+			],
+			"min_base_level": 3
+		},
+		{
+			"id": "garage",
+			"name": "Гараж / Транспорт",
+			"name_en": "Garage",
+			"description": "Позволяет улучшить транспорт для выездных матчей",
+			"effect_type": "transport_slot",
+			"levels": [
+				{
+					"level": 1,
+					"cost": 1000,
+					"effect_value": 1,
+					"description": "Парковка (разблокирует улучшение транспорта)"
+				}
+			],
+			"min_base_level": 1
+		}
+	]
+}

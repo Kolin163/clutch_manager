@@ -1,0 +1,169 @@
+{
+	"nationalities": [
+		{
+			"id": "russian",
+			"name_ru": "Русский",
+			"name_en": "Russian",
+			"region": "CIS",
+			"first_names": ["Дмитрий", "Александр", "Иван", "Никита", "Артём", "Михаил", "Сергей", "Андрей", "Максим", "Владислав", "Данил", "Егор", "Кирилл", "Павел", "Роман"],
+			"last_names": ["Иванов", "Смирнов", "Кузнецов", "Попов", "Васильев", "Петров", "Соколов", "Михайлов", "Новиков", "Фёдоров", "Морозов", "Волков", "Алексеев", "Лебедев", "Козлов"],
+			"nicknames": ["Blade", "Frost", "Zver", "Ghost", "Flame", "Storm", "Volk", "Bear", "Ice", "Shadow", "Spark", "Steel", "Thunder", "Rage", "Wolf", "EjectFB", "Panda", "Filin", "Kolin"],
+			"skin_weights": [0.65, 0.25, 0.10, 0.0, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.25, 0.25, 0.20, 0.15, 0.10, 0.05]
+		},
+		{
+			"id": "ukrainian",
+			"name_ru": "Украинец",
+			"name_en": "Ukrainian",
+			"region": "CIS",
+			"first_names": ["Олександр", "Дмитро", "Андрій", "Максим", "Владислав", "Богдан", "Артем", "Ілля", "Назар", "Тарас", "Денис", "Євген", "Олег", "Віктор", "Ярослав"],
+			"last_names": ["Шевченко", "Бондаренко", "Коваленко", "Бойко", "Ткаченко", "Кравченко", "Олійник", "Шевчук", "Поліщук", "Мельник", "Лисенко", "Марченко", "Савченко", "Руденко", "Мороз"],
+			"nicknames": ["Zero", "Chill", "Kozak", "Razor", "Snipe", "Viper", "Hawk", "Flash", "Blaze", "Raven", "Shade", "Drift", "Pulse", "Neo", "Apex"],
+			"skin_weights": [0.60, 0.30, 0.10, 0.0, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.25, 0.25, 0.20, 0.15, 0.10, 0.05]
+		},
+		{
+			"id": "kazakh",
+			"name_ru": "Казах",
+			"name_en": "Kazakh",
+			"region": "CIS",
+			"first_names": ["Алихан", "Нурсултан", "Арман", "Ерлан", "Даулет", "Бауыржан", "Асхат", "Дамир", "Ринат", "Тимур", "Айбек", "Санжар", "Ербол", "Мурат", "Руслан"],
+			"last_names": ["Назарбаев", "Ахметов", "Сулейменов", "Касымов", "Жумабаев", "Омаров", "Сатыбалдиев", "Токаев", "Байтурсынов", "Кунаев", "Мусин", "Серикбаев", "Нургалиев", "Абдрахманов", "Искаков"],
+			"nicknames": ["Nomad", "Steppe", "Khan", "Eagle", "Altyn", "Berkut", "Aibyn", "Batyr", "Tulpar", "Arlan", "Bars", "Qyran", "Saryarqa", "Zhalyn", "Bori"],
+			"skin_weights": [0.15, 0.35, 0.35, 0.15, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.15, 0.20, 0.25, 0.20, 0.15, 0.05]
+		},
+		{
+			"id": "belarusian",
+			"name_ru": "Белорус",
+			"name_en": "Belarusian",
+			"region": "CIS",
+			"first_names": ["Аляксандр", "Дзмітрый", "Павел", "Сяргей", "Андрэй", "Максім", "Віктар", "Юрый", "Алег", "Артур", "Раман", "Уладзімір", "Мікіта", "Кірыл", "Антон"],
+			"last_names": ["Іваноў", "Казлоў", "Новік", "Марозаў", "Паўлаў", "Лукашэнка", "Краўчанка", "Сідараў", "Герасімаў", "Фёдараў", "Васільеў", "Пятроў", "Кузьмін", "Захараў", "Грамыка"],
+			"nicknames": ["Zubr", "Belaz", "Polese", "Brest", "Minsk", "Lynx", "Frost", "Gleb", "Yan", "Mir", "Nord", "Svet", "Grad", "Dub", "Vez"],
+			"skin_weights": [0.70, 0.22, 0.08, 0.0, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.25, 0.25, 0.20, 0.15, 0.10, 0.05]
+		},
+		{
+			"id": "swedish",
+			"name_ru": "Швед",
+			"name_en": "Swedish",
+			"region": "EU",
+			"first_names": ["Erik", "Oscar", "William", "Lucas", "Oliver", "Alexander", "Hugo", "Liam", "Elias", "Viktor", "Adam", "Filip", "Emil", "Axel", "Gustav"],
+			"last_names": ["Andersson", "Johansson", "Karlsson", "Nilsson", "Eriksson", "Larsson", "Olsson", "Persson", "Svensson", "Gustafsson", "Pettersson", "Jonsson", "Lindberg", "Magnusson", "Lindgren"],
+			"nicknames": ["f0rest", "friberg", "Xizt", "draken", "REZ", "nawwk", "Brollan", "flusha", "KRIMZ", "JW", "olof", "dennis", "Lekr0", "twist", "pronax"],
+			"skin_weights": [0.85, 0.12, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.30, 0.25, 0.20, 0.12, 0.08, 0.05]
+		},
+		{
+			"id": "danish",
+			"name_ru": "Датчанин",
+			"name_en": "Danish",
+			"region": "EU",
+			"first_names": ["Magnus", "Frederik", "Mikkel", "Rasmus", "Mathias", "Emil", "Christian", "Oliver", "Lucas", "Andreas", "Nicolai", "Jakob", "Simon", "Casper", "Martin"],
+			"last_names": ["Nielsen", "Jensen", "Hansen", "Pedersen", "Andersen", "Christensen", "Larsen", "Sørensen", "Rasmussen", "Petersen", "Madsen", "Kristensen", "Olsen", "Thomsen", "Poulsen"],
+			"nicknames": ["device", "dupreeh", "Xyp9x", "gla1ve", "Magisk", "blameF", "k0nfig", "es3tag", "valde", "Bubzkji", "refrezh", "stavn", "cadiaN", "sjuush", "nicoodoz"],
+			"skin_weights": [0.85, 0.12, 0.03, 0.0, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.30, 0.25, 0.20, 0.12, 0.08, 0.05]
+		},
+		{
+			"id": "french",
+			"name_ru": "Француз",
+			"name_en": "French",
+			"region": "EU",
+			"first_names": ["Lucas", "Hugo", "Mathis", "Nathan", "Thomas", "Maxime", "Antoine", "Alexandre", "Julien", "Nicolas", "Pierre", "Guillaume", "Fabien", "Adrien", "Romain"],
+			"last_names": ["Martin", "Bernard", "Dubois", "Thomas", "Robert", "Richard", "Petit", "Durand", "Leroy", "Moreau", "Simon", "Laurent", "Lefebvre", "Michel", "Garcia"],
+			"nicknames": ["ZywOo", "shox", "kennyS", "apEX", "NBK", "RpK", "bodyy", "Vitality", "misutaaa", "Kyojin", "amanek", "Lucky", "JACKZ", "XTQZZZ", "Maka"],
+			"skin_weights": [0.60, 0.25, 0.10, 0.03, 0.02, 0.0, 0.0, 0.0],
+			"face_weights": [0.25, 0.25, 0.20, 0.15, 0.10, 0.05]
+		},
+		{
+			"id": "german",
+			"name_ru": "Немец",
+			"name_en": "German",
+			"region": "EU",
+			"first_names": ["Lukas", "Leon", "Maximilian", "Felix", "Paul", "Jonas", "Tim", "David", "Niklas", "Julian", "Florian", "Tobias", "Johannes", "Philipp", "Moritz"],
+			"last_names": ["Müller", "Schmidt", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Schulz", "Hoffmann", "Schäfer", "Koch", "Bauer", "Richter", "Klein"],
+			"nicknames": ["tabseN", "gob b", "nex", "tiziaN", "syrsoN", "faveN", "k1to", "XANTARES", "denis", "Spiidi", "keev", "kRYSTAL", "mirbit", "slaxz", "prosus"],
+			"skin_weights": [0.75, 0.18, 0.05, 0.02, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.28, 0.25, 0.20, 0.14, 0.08, 0.05]
+		},
+		{
+			"id": "polish",
+			"name_ru": "Поляк",
+			"name_en": "Polish",
+			"region": "EU",
+			"first_names": ["Jakub", "Mateusz", "Kacper", "Michał", "Filip", "Piotr", "Paweł", "Tomasz", "Marcin", "Krzysztof", "Adam", "Łukasz", "Wojciech", "Kamil", "Dawid"],
+			"last_names": ["Nowak", "Kowalski", "Wiśniewski", "Wójcik", "Kowalczyk", "Kamiński", "Lewandowski", "Zieliński", "Szymański", "Woźniak", "Dąbrowski", "Kozłowski", "Jankowski", "Mazur", "Kwiatkowski"],
+			"nicknames": ["pashaBiceps", "Snax", "byali", "TaZ", "NEO", "MICHU", "innocent", "SZPERO", "Vegi", "mouz", "dycha", "hades", "TOAO", "Goofy", "mhL"],
+			"skin_weights": [0.70, 0.22, 0.06, 0.02, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.25, 0.25, 0.20, 0.15, 0.10, 0.05]
+		},
+		{
+			"id": "brazilian",
+			"name_ru": "Бразилец",
+			"name_en": "Brazilian",
+			"region": "LATAM",
+			"first_names": ["Gabriel", "Lucas", "Matheus", "Guilherme", "Rafael", "Felipe", "Bruno", "Gustavo", "Leonardo", "Vinicius", "Henrique", "Pedro", "João", "Thiago", "Marcelo"],
+			"last_names": ["Silva", "Santos", "Oliveira", "Souza", "Rodrigues", "Ferreira", "Alves", "Pereira", "Lima", "Gomes", "Costa", "Ribeiro", "Martins", "Carvalho", "Almeida"],
+			"nicknames": ["FalleN", "coldzera", "fer", "TACO", "felps", "kNgV", "yuurih", "KSCERATO", "arT", "saffee", "drop", "chelo", "VINI", "boltz", "trk"],
+			"skin_weights": [0.15, 0.25, 0.30, 0.18, 0.08, 0.03, 0.01, 0.0],
+			"face_weights": [0.20, 0.22, 0.22, 0.18, 0.12, 0.06]
+		},
+		{
+			"id": "argentinian",
+			"name_ru": "Аргентинец",
+			"name_en": "Argentinian",
+			"region": "LATAM",
+			"first_names": ["Santiago", "Matías", "Nicolás", "Lucas", "Juan", "Agustín", "Facundo", "Tomás", "Martín", "Federico", "Sebastián", "Alejandro", "Diego", "Pablo", "Gonzalo"],
+			"last_names": ["González", "Rodríguez", "Gómez", "Fernández", "López", "Díаз", "Martínez", "Pérez", "García", "Sánchez", "Romero", "Sosa", "Torres", "Álvarez", "Ruiz"],
+			"nicknames": ["meyern", "Luken", "dgt", "nqz", "max", "reversive", "1962", "Noktse", "Luch", "Rox", "Mith", "Tsjr", "Kaze", "Lescano", "Nbl"],
+			"skin_weights": [0.45, 0.30, 0.15, 0.07, 0.03, 0.0, 0.0, 0.0],
+			"face_weights": [0.22, 0.24, 0.22, 0.16, 0.10, 0.06]
+		},
+		{
+			"id": "chinese",
+			"name_ru": "Китаец",
+			"name_en": "Chinese",
+			"region": "ASIA",
+			"first_names": ["Wei", "Jian", "Hao", "Yang", "Chen", "Ming", "Jun", "Xiao", "Zhi", "Feng", "Long", "Tao", "Lei", "Peng", "Bo"],
+			"last_names": ["Wang", "Li", "Zhang", "Liu", "Chen", "Yang", "Huang", "Zhao", "Wu", "Zhou", "Xu", "Sun", "Ma", "Zhu", "Hu"],
+			"nicknames": ["somebody", "Summer", "kaze", "Attacker", "bottle", "zhokiNg", "SLOWLY", "ChildKing", "Savage", "advent", "Moseyuh", "Viva", "Westmelon", "JamYoung", "Stinky"],
+			"skin_weights": [0.10, 0.35, 0.40, 0.12, 0.03, 0.0, 0.0, 0.0],
+			"face_weights": [0.15, 0.18, 0.25, 0.22, 0.15, 0.05]
+		},
+		{
+			"id": "korean",
+			"name_ru": "Кореец",
+			"name_en": "Korean",
+			"region": "ASIA",
+			"first_names": ["Min-jun", "Seo-jun", "Ji-ho", "Jun-seo", "Hyun-woo", "Sung-min", "Jin-woo", "Dong-hyun", "Tae-yang", "Jae-min", "Woo-jin", "Seung-ho", "Yun-ho", "Dae-sung", "Sang-woo"],
+			"last_names": ["Kim", "Lee", "Park", "Choi", "Jung", "Kang", "Cho", "Yoon", "Jang", "Lim", "Han", "Shin", "Seo", "Kwon", "Hwang"],
+			"nicknames": ["Zest", "BnTeT", "xeta", "k1Ng", "stax", "Argency", "aimaN", "hate", "HSK", "Freeman", "LETN1", "EMILIA", "October", "Glow", "Jungle"],
+			"skin_weights": [0.20, 0.45, 0.30, 0.05, 0.0, 0.0, 0.0, 0.0],
+			"face_weights": [0.15, 0.18, 0.25, 0.22, 0.15, 0.05]
+		},
+		{
+			"id": "turkish",
+			"name_ru": "Турок",
+			"name_en": "Turkish",
+			"region": "MENA",
+			"first_names": ["Mehmet", "Mustafa", "Ahmet", "Ali", "Hüseyin", "Hasan", "İbrahim", "Yusuf", "Osman", "Murat", "Emre", "Burak", "Can", "Cem", "Serkan"],
+			"last_names": ["Yılmaz", "Kaya", "Demir", "Çelik", "Şahin", "Yıldız", "Yıldırım", "Öztürk", "Aydın", "Özdemir", "Arslan", "Doğan", "Kılıç", "Çetin", "Aslan"],
+			"nicknames": ["XANTARES", "woxic", "Calyx", "paz", "imoRR", "MAJ3R", "ngiN", "Buğra", "Turko", "Izzy", "xfl0ud", "DODOO", "Soulfly", "Kerem", "Demho"],
+			"skin_weights": [0.20, 0.40, 0.30, 0.08, 0.02, 0.0, 0.0, 0.0],
+			"face_weights": [0.18, 0.22, 0.25, 0.18, 0.12, 0.05]
+		},
+		{
+			"id": "saudi",
+			"name_ru": "Саудовец",
+			"name_en": "Saudi",
+			"region": "MENA",
+			"first_names": ["Mohammed", "Abdullah", "Fahad", "Khalid", "Omar", "Sultan", "Ahmed", "Faisal", "Saleh", "Nasser", "Turki", "Saud", "Majed", "Nawaf", "Abdulaziz"],
+			"last_names": ["Al-Saud", "Al-Rashid", "Al-Qahtani", "Al-Ghamdi", "Al-Otaibi", "Al-Zahrani", "Al-Dossari", "Al-Shehri", "Al-Harbi", "Al-Mutairi", "Al-Subaie", "Al-Anazi", "Al-Juhani", "Al-Malki", "Al-Ahmadi"],
+			"nicknames": ["topo", "Jeemi", "Raad", "BOROS", "Mojo", "Oasis", "Storm", "Falcon", "Desert", "Hawk", "Flame", "Sand", "Nuke", "Scorp", "Venom"],
+			"skin_weights": [0.05, 0.25, 0.45, 0.20, 0.05, 0.0, 0.0, 0.0],
+			"face_weights": [0.15, 0.22, 0.28, 0.20, 0.10, 0.05]
+		}
+	]
+}

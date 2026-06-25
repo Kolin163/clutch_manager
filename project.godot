@@ -1,0 +1,59 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Clutch Manager"
+config/description="Esports Manager Simulator"
+run/main_scene="uid://bwu5c4ceqqdu3"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[autoload]
+
+EventBus="*uid://durl2ktr0lpul"
+Bridge="*uid://b3r25tt66ybr2"
+GameManager="*uid://46ooie5c3eg"
+SaveManager="*uid://dg2jh8p4xr13o"
+EconomyManager="*uid://b2s8rikgtsqpw"
+RosterManager="*uid://7omfilkr6hel"
+ContractManager="*uid://dvimqhoheluby"
+AgentPool="*uid://ctj7pwovi7nrb"
+Scouting="*uid://c5coe0f2c5k3d"
+MatchEngine="*uid://d1ycxlg2lsec0"
+TacticSelector="*uid://5m2cvu4w8xnm"
+MatchEvent="*uid://bi28yw55r8u54"
+LeagueManager="*uid://bgpbmunlppmcc"
+BaseManager="*uid://cychguw0u72q5"
+TrainingManager="*uid://dx31l84iphdpd"
+AgingManager="*uid://ccasiyda75f6u"
+StaffManager="*uid://cob1usxgeooqx"
+SponsorManager="*uid://bwbxpexqnita4"
+MetaManager="*uid://c4qx51in41318"
+MajorManager="*uid://dagg31bjcqvms"
+OffMatchEventManager="*uid://yxh70f2xr2tw"
+PopularityManager="*uid://cxdkr8u6dbm33"
+EventResolver="*uid://c2c2jgu5vvh1y"
+AIWorld="*uid://diqvbfyk6xi3c"
+AIMarket="*uid://bidhl2wlwveny"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
