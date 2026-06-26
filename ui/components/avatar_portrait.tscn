@@ -10,10 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://c0ktiepk7075h" path="res://assets/avatars/eyeLine/line6.svg" id="7_eyeline"]
 [ext_resource type="Texture2D" uid="uid://dwrs5prf8ht7t" path="res://assets/avatars/mouth/mouth3.svg" id="8_53hvb"]
 [ext_resource type="Texture2D" uid="uid://bhr18lg0w7v2s" path="res://assets/avatars/eye/eye19.svg" id="10_53hvb"]
-[ext_resource type="Texture2D" uid="uid://d4my4iwagguad" path="res://assets/avatars/eyebrow/eyebrow1.svg" id="12_brow"]
+[ext_resource type="Texture2D" uid="uid://26sbr7u6syd1" path="res://assets/avatars/eyebrow/eyebrow16.svg" id="11_53hvb"]
+[ext_resource type="Texture2D" uid="uid://dx3eg5h2r5efw" path="res://assets/avatars/facialHair/soul.svg" id="13_53hvb"]
 [ext_resource type="Texture2D" uid="uid://h6qqabbulbsh" path="res://assets/avatars/hair/spike.svg" id="13_bqudn"]
 [ext_resource type="Texture2D" uid="uid://djblgbvhwrlb8" path="res://assets/avatars/nose/nose1.svg" id="13_nose"]
-[ext_resource type="Texture2D" uid="uid://bstlxrct7krk1" path="res://assets/avatars/facialHair/beard1.svg" id="14_beard"]
 [ext_resource type="Texture2D" uid="uid://baquamvycdj05" path="res://assets/avatars/glasses/glasses2-primary.svg" id="14_ldg2j"]
 
 [node name="AvatarPortrait" type="Control" unique_id=1653706461]
@@ -191,7 +191,6 @@ texture = ExtResource("10_53hvb")
 stretch_mode = 5
 
 [node name="EyebrowL" type="TextureRect" parent="." unique_id=1457171116]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -204,12 +203,12 @@ offset_right = 114.0
 offset_bottom = -34.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_brow")
+texture = ExtResource("11_53hvb")
 expand_mode = 1
 stretch_mode = 5
+flip_h = true
 
 [node name="EyebrowR" type="TextureRect" parent="." unique_id=1130767214]
-visible = false
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -222,10 +221,9 @@ offset_right = -44.0
 offset_bottom = -34.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("12_brow")
+texture = ExtResource("11_53hvb")
 expand_mode = 1
 stretch_mode = 5
-flip_h = true
 
 [node name="Nose" type="TextureRect" parent="." unique_id=1306551547]
 layout_mode = 1
@@ -240,14 +238,13 @@ texture = ExtResource("13_nose")
 stretch_mode = 5
 
 [node name="FacialHair" type="TextureRect" parent="." unique_id=1201099395]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("14_beard")
+texture = ExtResource("13_53hvb")
 expand_mode = 1
 stretch_mode = 5
 
@@ -263,7 +260,6 @@ expand_mode = 1
 stretch_mode = 5
 
 [node name="Glasses" type="TextureRect" parent="." unique_id=753645141]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
