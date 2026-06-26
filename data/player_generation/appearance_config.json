@@ -101,88 +101,28 @@
         },
         {
             "id": 1,
-            "name": "head10",
-            "file": "head10.svg"
-        },
-        {
-            "id": 2,
-            "name": "head11",
-            "file": "head11.svg"
-        },
-        {
-            "id": 3,
-            "name": "head12",
-            "file": "head12.svg"
-        },
-        {
-            "id": 4,
-            "name": "head13",
-            "file": "head13.svg"
-        },
-        {
-            "id": 5,
-            "name": "head14",
-            "file": "head14.svg"
-        },
-        {
-            "id": 6,
-            "name": "head15",
-            "file": "head15.svg"
-        },
-        {
-            "id": 7,
-            "name": "head16",
-            "file": "head16.svg"
-        },
-        {
-            "id": 8,
-            "name": "head17",
-            "file": "head17.svg"
-        },
-        {
-            "id": 9,
-            "name": "head18",
-            "file": "head18.svg"
-        },
-        {
-            "id": 10,
             "name": "head2",
             "file": "head2.svg"
         },
         {
-            "id": 11,
+            "id": 2,
             "name": "head3",
             "file": "head3.svg"
         },
         {
-            "id": 12,
+            "id": 3,
             "name": "head4",
             "file": "head4.svg"
         },
         {
-            "id": 13,
+            "id": 4,
             "name": "head5",
             "file": "head5.svg"
         },
         {
-            "id": 14,
+            "id": 5,
             "name": "head6",
             "file": "head6.svg"
-        },
-        {
-            "id": 15,
-            "name": "head7",
-            "file": "head7.svg"
-        },
-        {
-            "id": 16,
-            "name": "head8",
-            "file": "head8.svg"
-        },
-        {
-            "id": 17,
-            "name": "head9",
-            "file": "head9.svg"
         }
     ],
     "eyes": [
@@ -193,93 +133,73 @@
         },
         {
             "id": 1,
-            "name": "eye10",
-            "file": "eye10.svg"
-        },
-        {
-            "id": 2,
-            "name": "eye11",
-            "file": "eye11.svg"
-        },
-        {
-            "id": 3,
             "name": "eye12",
             "file": "eye12.svg"
         },
         {
-            "id": 4,
+            "id": 2,
             "name": "eye13",
             "file": "eye13.svg"
         },
         {
-            "id": 5,
+            "id": 3,
             "name": "eye14",
             "file": "eye14.svg"
         },
         {
-            "id": 6,
+            "id": 4,
             "name": "eye15",
             "file": "eye15.svg"
         },
         {
-            "id": 7,
+            "id": 5,
             "name": "eye16",
             "file": "eye16.svg"
         },
         {
-            "id": 8,
+            "id": 6,
             "name": "eye17",
             "file": "eye17.svg"
         },
         {
-            "id": 9,
+            "id": 7,
             "name": "eye18",
             "file": "eye18.svg"
         },
         {
-            "id": 10,
+            "id": 8,
             "name": "eye19",
             "file": "eye19.svg"
         },
         {
-            "id": 11,
+            "id": 9,
             "name": "eye2",
             "file": "eye2.svg"
         },
         {
-            "id": 12,
-            "name": "eye3",
-            "file": "eye3.svg"
-        },
-        {
-            "id": 13,
+            "id": 10,
             "name": "eye4",
             "file": "eye4.svg"
         },
         {
-            "id": 14,
+            "id": 11,
             "name": "eye5",
             "file": "eye5.svg"
         },
         {
-            "id": 15,
+            "id": 12,
             "name": "eye6",
             "file": "eye6.svg"
         },
         {
-            "id": 16,
+            "id": 13,
             "name": "eye7",
             "file": "eye7.svg"
         },
         {
-            "id": 17,
+            "id": 14,
             "name": "eye8",
             "file": "eye8.svg"
-        },
-        {
-            "id": 18,
-            "name": "eye9",
-            "file": "eye9.svg"
         }
     ],
     "noses": [
@@ -290,153 +210,78 @@
         },
         {
             "id": 1,
-            "name": "nose10",
-            "file": "nose10.svg"
-        },
-        {
-            "id": 2,
-            "name": "nose11",
-            "file": "nose11.svg"
-        },
-        {
-            "id": 3,
-            "name": "nose12",
-            "file": "nose12.svg"
-        },
-        {
-            "id": 4,
-            "name": "nose13",
-            "file": "nose13.svg"
-        },
-        {
-            "id": 5,
-            "name": "nose14",
-            "file": "nose14.svg"
-        },
-        {
-            "id": 6,
-            "name": "nose2",
-            "file": "nose2.svg"
-        },
-        {
-            "id": 7,
             "name": "nose3",
             "file": "nose3.svg"
         },
         {
-            "id": 8,
-            "name": "nose4",
-            "file": "nose4.svg"
-        },
-        {
-            "id": 9,
+            "id": 2,
             "name": "nose5",
             "file": "nose5.svg"
         },
         {
-            "id": 10,
+            "id": 3,
             "name": "nose6",
             "file": "nose6.svg"
         },
         {
-            "id": 11,
+            "id": 4,
             "name": "nose7",
             "file": "nose7.svg"
         },
         {
-            "id": 12,
+            "id": 5,
             "name": "nose8",
             "file": "nose8.svg"
-        },
-        {
-            "id": 13,
-            "name": "nose9",
-            "file": "nose9.svg"
         }
     ],
     "mouths": [
         {
             "id": 0,
-            "name": "angry",
-            "file": "angry.svg"
-        },
-        {
-            "id": 1,
             "name": "closed",
             "file": "closed.svg"
         },
         {
-            "id": 2,
+            "id": 1,
             "name": "mouth",
             "file": "mouth.svg"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "mouth2",
             "file": "mouth2.svg"
         },
         {
-            "id": 4,
+            "id": 3,
             "name": "mouth3",
             "file": "mouth3.svg"
         },
         {
-            "id": 5,
-            "name": "mouth4",
-            "file": "mouth4.svg"
-        },
-        {
-            "id": 6,
-            "name": "mouth5",
-            "file": "mouth5.svg"
-        },
-        {
-            "id": 7,
-            "name": "mouth6",
-            "file": "mouth6.svg"
-        },
-        {
-            "id": 8,
-            "name": "mouth7",
-            "file": "mouth7.svg"
-        },
-        {
-            "id": 9,
-            "name": "mouth8",
-            "file": "mouth8.svg"
-        },
-        {
-            "id": 10,
+            "id": 4,
             "name": "side",
             "file": "side.svg"
         },
         {
-            "id": 11,
+            "id": 5,
             "name": "smile-closed",
             "file": "smile-closed.svg"
         },
         {
-            "id": 12,
+            "id": 6,
             "name": "smile",
             "file": "smile.svg"
         },
         {
-            "id": 13,
-            "name": "smile2",
-            "file": "smile2.svg"
-        },
-        {
-            "id": 14,
+            "id": 7,
             "name": "smile3",
             "file": "smile3.svg"
         },
         {
-            "id": 15,
+            "id": 8,
             "name": "smile4",
             "file": "smile4.svg"
         },
         {
-            "id": 16,
+            "id": 9,
             "name": "straight",
             "file": "straight.svg"
         }
@@ -444,193 +289,105 @@
     "hairstyles": [
         {
             "id": 0,
-            "name": "afro",
-            "file": "afro.svg"
+            "name": "blowoutFade",
+            "file": "blowoutFade.svg",
+            "color_applicable": true
         },
         {
             "id": 1,
-            "name": "afro2",
-            "file": "afro2.svg"
+            "name": "crop-fade",
+            "file": "crop-fade.svg",
+            "color_applicable": true
         },
         {
             "id": 2,
-            "name": "blowoutFade",
-            "file": "blowoutFade.svg"
+            "name": "curly",
+            "file": "curly.svg",
+            "color_applicable": true
         },
         {
             "id": 3,
-            "name": "cornrows",
-            "file": "cornrows.svg"
+            "name": "fauxhawk-fade",
+            "file": "fauxhawk-fade.svg",
+            "color_applicable": true
         },
         {
             "id": 4,
-            "name": "crop-fade",
-            "file": "crop-fade.svg"
+            "name": "longHair",
+            "file": "longHair.svg",
+            "color_applicable": true
         },
         {
             "id": 5,
-            "name": "crop-fade2",
-            "file": "crop-fade2.svg"
+            "name": "messy-short",
+            "file": "messy-short.svg",
+            "color_applicable": true
         },
         {
             "id": 6,
-            "name": "crop",
-            "file": "crop.svg"
+            "name": "messy",
+            "file": "messy.svg",
+            "color_applicable": true
         },
         {
             "id": 7,
-            "name": "curly",
-            "file": "curly.svg"
+            "name": "middle-part",
+            "file": "middle-part.svg",
+            "color_applicable": true
         },
         {
             "id": 8,
-            "name": "curly2",
-            "file": "curly2.svg"
+            "name": "parted",
+            "file": "parted.svg",
+            "color_applicable": true
         },
         {
             "id": 9,
-            "name": "curly3",
-            "file": "curly3.svg"
+            "name": "shaggy1",
+            "file": "shaggy1.svg",
+            "color_applicable": true
         },
         {
             "id": 10,
-            "name": "curlyFade1",
-            "file": "curlyFade1.svg"
+            "name": "shaggy2",
+            "file": "shaggy2.svg",
+            "color_applicable": true
         },
         {
             "id": 11,
-            "name": "curlyFade2",
-            "file": "curlyFade2.svg"
+            "name": "short-fade-2",
+            "file": "short-fade-2.svg",
+            "color_applicable": true
         },
         {
             "id": 12,
-            "name": "dreads",
-            "file": "dreads.svg"
+            "name": "short-fade",
+            "file": "short-fade.svg",
+            "color_applicable": true
         },
         {
             "id": 13,
-            "name": "emo",
-            "file": "emo.svg"
+            "name": "short",
+            "file": "short.svg",
+            "color_applicable": true
         },
         {
             "id": 14,
-            "name": "faux-hawk",
-            "file": "faux-hawk.svg"
+            "name": "short2",
+            "file": "short2.svg",
+            "color_applicable": true
         },
         {
             "id": 15,
-            "name": "fauxhawk-fade",
-            "file": "fauxhawk-fade.svg"
+            "name": "short3",
+            "file": "short3.svg",
+            "color_applicable": true
         },
         {
             "id": 16,
-            "name": "hair",
-            "file": "hair.svg"
-        },
-        {
-            "id": 17,
-            "name": "high",
-            "file": "high.svg"
-        },
-        {
-            "id": 18,
-            "name": "juice",
-            "file": "juice.svg"
-        },
-        {
-            "id": 19,
-            "name": "longHair",
-            "file": "longHair.svg"
-        },
-        {
-            "id": 20,
-            "name": "messy-short",
-            "file": "messy-short.svg"
-        },
-        {
-            "id": 21,
-            "name": "messy",
-            "file": "messy.svg"
-        },
-        {
-            "id": 22,
-            "name": "middle-part",
-            "file": "middle-part.svg"
-        },
-        {
-            "id": 23,
-            "name": "parted",
-            "file": "parted.svg"
-        },
-        {
-            "id": 24,
-            "name": "shaggy1",
-            "file": "shaggy1.svg"
-        },
-        {
-            "id": 25,
-            "name": "shaggy2",
-            "file": "shaggy2.svg"
-        },
-        {
-            "id": 26,
-            "name": "short-bald",
-            "file": "short-bald.svg"
-        },
-        {
-            "id": 27,
-            "name": "short-fade-2",
-            "file": "short-fade-2.svg"
-        },
-        {
-            "id": 28,
-            "name": "short-fade",
-            "file": "short-fade.svg"
-        },
-        {
-            "id": 29,
-            "name": "short",
-            "file": "short.svg"
-        },
-        {
-            "id": 30,
-            "name": "short2",
-            "file": "short2.svg"
-        },
-        {
-            "id": 31,
-            "name": "short3",
-            "file": "short3.svg"
-        },
-        {
-            "id": 32,
-            "name": "shortBangs",
-            "file": "shortBangs.svg"
-        },
-        {
-            "id": 33,
             "name": "spike",
-            "file": "spike.svg"
-        },
-        {
-            "id": 34,
-            "name": "spike2",
-            "file": "spike2.svg"
-        },
-        {
-            "id": 35,
-            "name": "spike3",
-            "file": "spike3.svg"
-        },
-        {
-            "id": 36,
-            "name": "spike4",
-            "file": "spike4.svg"
-        },
-        {
-            "id": 37,
-            "name": "tall-fade",
-            "file": "tall-fade.svg"
+            "file": "spike.svg",
+            "color_applicable": true
         }
     ],
     "hair_bgs": [
@@ -649,514 +406,172 @@
         {
             "id": 0,
             "name": "beard-point",
-            "file": "beard-point.svg"
+            "file": "beard-point.svg",
+            "color_applicable": true
         },
         {
             "id": 1,
             "name": "beard1",
-            "file": "beard1.svg"
+            "file": "beard1.svg",
+            "color_applicable": true
         },
         {
             "id": 2,
             "name": "beard2",
-            "file": "beard2.svg"
+            "file": "beard2.svg",
+            "color_applicable": true
         },
         {
             "id": 3,
-            "name": "beard3",
-            "file": "beard3.svg"
+            "name": "beard4",
+            "file": "beard4.svg",
+            "color_applicable": true
         },
         {
             "id": 4,
-            "name": "beard4",
-            "file": "beard4.svg"
+            "name": "chin-strap",
+            "file": "chin-strap.svg",
+            "color_applicable": true
         },
         {
             "id": 5,
-            "name": "beard5",
-            "file": "beard5.svg"
+            "name": "fullgoatee",
+            "file": "fullgoatee.svg",
+            "color_applicable": true
         },
         {
             "id": 6,
-            "name": "beard6",
-            "file": "beard6.svg"
+            "name": "fullgoatee2",
+            "file": "fullgoatee2.svg",
+            "color_applicable": true
         },
         {
             "id": 7,
-            "name": "chin-strap",
-            "file": "chin-strap.svg"
+            "name": "goatee1",
+            "file": "goatee1.svg",
+            "color_applicable": true
         },
         {
             "id": 8,
-            "name": "chin-strapStache",
-            "file": "chin-strapStache.svg"
+            "name": "goatee2",
+            "file": "goatee2.svg",
+            "color_applicable": true
         },
         {
             "id": 9,
-            "name": "fullgoatee",
-            "file": "fullgoatee.svg"
+            "name": "goatee3",
+            "file": "goatee3.svg",
+            "color_applicable": true
         },
         {
             "id": 10,
-            "name": "fullgoatee2",
-            "file": "fullgoatee2.svg"
+            "name": "mustache1",
+            "file": "mustache1.svg",
+            "color_applicable": true
         },
         {
             "id": 11,
-            "name": "fullgoatee3",
-            "file": "fullgoatee3.svg"
+            "name": "soul-stache",
+            "file": "soul-stache.svg",
+            "color_applicable": true
         },
         {
             "id": 12,
-            "name": "fullgoatee4",
-            "file": "fullgoatee4.svg"
-        },
-        {
-            "id": 13,
-            "name": "fullgoatee5",
-            "file": "fullgoatee5.svg"
-        },
-        {
-            "id": 14,
-            "name": "fullgoatee6",
-            "file": "fullgoatee6.svg"
-        },
-        {
-            "id": 15,
-            "name": "goatee-thin-stache",
-            "file": "goatee-thin-stache.svg"
-        },
-        {
-            "id": 16,
-            "name": "goatee-thin",
-            "file": "goatee-thin.svg"
-        },
-        {
-            "id": 17,
-            "name": "goatee1-stache",
-            "file": "goatee1-stache.svg"
-        },
-        {
-            "id": 18,
-            "name": "goatee1",
-            "file": "goatee1.svg"
-        },
-        {
-            "id": 19,
-            "name": "goatee10",
-            "file": "goatee10.svg"
-        },
-        {
-            "id": 20,
-            "name": "goatee11",
-            "file": "goatee11.svg"
-        },
-        {
-            "id": 21,
-            "name": "goatee12",
-            "file": "goatee12.svg"
-        },
-        {
-            "id": 22,
-            "name": "goatee15",
-            "file": "goatee15.svg"
-        },
-        {
-            "id": 23,
-            "name": "goatee16",
-            "file": "goatee16.svg"
-        },
-        {
-            "id": 24,
-            "name": "goatee17",
-            "file": "goatee17.svg"
-        },
-        {
-            "id": 25,
-            "name": "goatee18",
-            "file": "goatee18.svg"
-        },
-        {
-            "id": 26,
-            "name": "goatee19",
-            "file": "goatee19.svg"
-        },
-        {
-            "id": 27,
-            "name": "goatee2",
-            "file": "goatee2.svg"
-        },
-        {
-            "id": 28,
-            "name": "goatee3",
-            "file": "goatee3.svg"
-        },
-        {
-            "id": 29,
-            "name": "goatee4-stache",
-            "file": "goatee4-stache.svg"
-        },
-        {
-            "id": 30,
-            "name": "goatee4",
-            "file": "goatee4.svg"
-        },
-        {
-            "id": 31,
-            "name": "goatee5",
-            "file": "goatee5.svg"
-        },
-        {
-            "id": 32,
-            "name": "goatee6",
-            "file": "goatee6.svg"
-        },
-        {
-            "id": 33,
-            "name": "goatee7",
-            "file": "goatee7.svg"
-        },
-        {
-            "id": 34,
-            "name": "goatee8",
-            "file": "goatee8.svg"
-        },
-        {
-            "id": 35,
-            "name": "goatee9",
-            "file": "goatee9.svg"
-        },
-        {
-            "id": 36,
-            "name": "harley1-sb-1",
-            "file": "harley1-sb-1.svg"
-        },
-        {
-            "id": 37,
-            "name": "harley1-sb-2",
-            "file": "harley1-sb-2.svg"
-        },
-        {
-            "id": 38,
-            "name": "harley1",
-            "file": "harley1.svg"
-        },
-        {
-            "id": 39,
-            "name": "harley2-sb-1",
-            "file": "harley2-sb-1.svg"
-        },
-        {
-            "id": 40,
-            "name": "harley2-sb-2",
-            "file": "harley2-sb-2.svg"
-        },
-        {
-            "id": 41,
-            "name": "harley2",
-            "file": "harley2.svg"
-        },
-        {
-            "id": 42,
-            "name": "harly3-sb-1",
-            "file": "harly3-sb-1.svg"
-        },
-        {
-            "id": 43,
-            "name": "harly3-sb-2",
-            "file": "harly3-sb-2.svg"
-        },
-        {
-            "id": 44,
-            "name": "harly3",
-            "file": "harly3.svg"
-        },
-        {
-            "id": 45,
-            "name": "honest-abe-stache",
-            "file": "honest-abe-stache.svg"
-        },
-        {
-            "id": 46,
-            "name": "honest-abe",
-            "file": "honest-abe.svg"
-        },
-        {
-            "id": 47,
-            "name": "logan",
-            "file": "logan.svg"
-        },
-        {
-            "id": 48,
-            "name": "loganGoatee2",
-            "file": "loganGoatee2.svg"
-        },
-        {
-            "id": 49,
-            "name": "loganGoatee2Stache",
-            "file": "loganGoatee2Stache.svg"
-        },
-        {
-            "id": 50,
-            "name": "loganGoatee3",
-            "file": "loganGoatee3.svg"
-        },
-        {
-            "id": 51,
-            "name": "loganGoatee3soul",
-            "file": "loganGoatee3soul.svg"
-        },
-        {
-            "id": 52,
-            "name": "loganGoatee3soulStache",
-            "file": "loganGoatee3soulStache.svg"
-        },
-        {
-            "id": 53,
-            "name": "loganSoul",
-            "file": "loganSoul.svg"
-        },
-        {
-            "id": 54,
-            "name": "mustache-thin",
-            "file": "mustache-thin.svg"
-        },
-        {
-            "id": 55,
-            "name": "mustache1",
-            "file": "mustache1.svg"
-        },
-        {
-            "id": 56,
-            "name": "mustache1SB1",
-            "file": "mustache1SB1.svg"
-        },
-        {
-            "id": 57,
-            "name": "mustache1SB2",
-            "file": "mustache1SB2.svg"
-        },
-        {
-            "id": 58,
-            "name": "mutton",
-            "file": "mutton.svg"
-        },
-        {
-            "id": 59,
-            "name": "muttonGoatee1",
-            "file": "muttonGoatee1.svg"
-        },
-        {
-            "id": 60,
-            "name": "muttonGoatee1Stache",
-            "file": "muttonGoatee1Stache.svg"
-        },
-        {
-            "id": 61,
-            "name": "muttonGoatee2",
-            "file": "muttonGoatee2.svg"
-        },
-        {
-            "id": 62,
-            "name": "muttonGoatee2Stache",
-            "file": "muttonGoatee2Stache.svg"
-        },
-        {
-            "id": 63,
-            "name": "muttonGoatee5",
-            "file": "muttonGoatee5.svg"
-        },
-        {
-            "id": 64,
-            "name": "muttonGoatee5Stache",
-            "file": "muttonGoatee5Stache.svg"
-        },
-        {
-            "id": 65,
-            "name": "muttonSoul",
-            "file": "muttonSoul.svg"
-        },
-        {
-            "id": 66,
-            "name": "muttonStache",
-            "file": "muttonStache.svg"
-        },
-        {
-            "id": 67,
-            "name": "muttonStacheSoul",
-            "file": "muttonStacheSoul.svg"
-        },
-        {
-            "id": 68,
-            "name": "neckbeard",
-            "file": "neckbeard.svg"
-        },
-        {
-            "id": 69,
-            "name": "neckbeard2",
-            "file": "neckbeard2.svg"
-        },
-        {
-            "id": 70,
-            "name": "neckbeard2SB1",
-            "file": "neckbeard2SB1.svg"
-        },
-        {
-            "id": 71,
-            "name": "neckbeard2SB2",
-            "file": "neckbeard2SB2.svg"
-        },
-        {
-            "id": 72,
-            "name": "neckbeardSB1",
-            "file": "neckbeardSB1.svg"
-        },
-        {
-            "id": 73,
-            "name": "neckbeardSB2",
-            "file": "neckbeardSB2.svg"
-        },
-        {
-            "id": 74,
-            "name": "sideburns1",
-            "file": "sideburns1.svg"
-        },
-        {
-            "id": 75,
-            "name": "sideburns2",
-            "file": "sideburns2.svg"
-        },
-        {
-            "id": 76,
-            "name": "sideburns3",
-            "file": "sideburns3.svg"
-        },
-        {
-            "id": 77,
-            "name": "soul-stache",
-            "file": "soul-stache.svg"
-        },
-        {
-            "id": 78,
             "name": "soul",
-            "file": "soul.svg"
-        },
-        {
-            "id": 79,
-            "name": "wilt-sideburns-long",
-            "file": "wilt-sideburns-long.svg"
-        },
-        {
-            "id": 80,
-            "name": "wilt-sideburns-short",
-            "file": "wilt-sideburns-short.svg"
-        },
-        {
-            "id": 81,
-            "name": "wilt",
-            "file": "wilt.svg"
+            "file": "soul.svg",
+            "color_applicable": true
         }
     ],
     "eyebrows": [
         {
             "id": 0,
             "name": "eyebrow1",
-            "file": "eyebrow1.svg"
+            "file": "eyebrow1.svg",
+            "color_applicable": true
         },
         {
             "id": 1,
             "name": "eyebrow10",
-            "file": "eyebrow10.svg"
+            "file": "eyebrow10.svg",
+            "color_applicable": true
         },
         {
             "id": 2,
             "name": "eyebrow11",
-            "file": "eyebrow11.svg"
+            "file": "eyebrow11.svg",
+            "color_applicable": true
         },
         {
             "id": 3,
             "name": "eyebrow12",
-            "file": "eyebrow12.svg"
+            "file": "eyebrow12.svg",
+            "color_applicable": true
         },
         {
             "id": 4,
             "name": "eyebrow13",
-            "file": "eyebrow13.svg"
+            "file": "eyebrow13.svg",
+            "color_applicable": true
         },
         {
             "id": 5,
             "name": "eyebrow14",
-            "file": "eyebrow14.svg"
+            "file": "eyebrow14.svg",
+            "color_applicable": true
         },
         {
             "id": 6,
             "name": "eyebrow15",
-            "file": "eyebrow15.svg"
+            "file": "eyebrow15.svg",
+            "color_applicable": true
         },
         {
             "id": 7,
             "name": "eyebrow16",
-            "file": "eyebrow16.svg"
+            "file": "eyebrow16.svg",
+            "color_applicable": true
         },
         {
             "id": 8,
-            "name": "eyebrow17",
-            "file": "eyebrow17.svg"
+            "name": "eyebrow3",
+            "file": "eyebrow3.svg",
+            "color_applicable": true
         },
         {
             "id": 9,
-            "name": "eyebrow18",
-            "file": "eyebrow18.svg"
+            "name": "eyebrow4",
+            "file": "eyebrow4.svg",
+            "color_applicable": true
         },
         {
             "id": 10,
-            "name": "eyebrow19",
-            "file": "eyebrow19.svg"
+            "name": "eyebrow5",
+            "file": "eyebrow5.svg",
+            "color_applicable": true
         },
         {
             "id": 11,
-            "name": "eyebrow2",
-            "file": "eyebrow2.svg"
+            "name": "eyebrow6",
+            "file": "eyebrow6.svg",
+            "color_applicable": true
         },
         {
             "id": 12,
-            "name": "eyebrow20",
-            "file": "eyebrow20.svg"
+            "name": "eyebrow7",
+            "file": "eyebrow7.svg",
+            "color_applicable": true
         },
         {
             "id": 13,
-            "name": "eyebrow3",
-            "file": "eyebrow3.svg"
+            "name": "eyebrow8",
+            "file": "eyebrow8.svg",
+            "color_applicable": true
         },
         {
             "id": 14,
-            "name": "eyebrow4",
-            "file": "eyebrow4.svg"
-        },
-        {
-            "id": 15,
-            "name": "eyebrow5",
-            "file": "eyebrow5.svg"
-        },
-        {
-            "id": 16,
-            "name": "eyebrow6",
-            "file": "eyebrow6.svg"
-        },
-        {
-            "id": 17,
-            "name": "eyebrow7",
-            "file": "eyebrow7.svg"
-        },
-        {
-            "id": 18,
-            "name": "eyebrow8",
-            "file": "eyebrow8.svg"
-        },
-        {
-            "id": 19,
             "name": "eyebrow9",
-            "file": "eyebrow9.svg"
+            "file": "eyebrow9.svg",
+            "color_applicable": true
         }
     ],
     "bodies": [
@@ -1206,125 +621,25 @@
     "glasses": [
         {
             "id": 0,
-            "name": "facemask",
-            "file": "facemask.svg"
-        },
-        {
-            "id": 1,
             "name": "glasses1-primary",
             "file": "glasses1-primary.svg"
         },
         {
-            "id": 2,
-            "name": "glasses1-secondary",
-            "file": "glasses1-secondary.svg"
-        },
-        {
-            "id": 3,
+            "id": 1,
             "name": "glasses2-black",
             "file": "glasses2-black.svg"
         },
         {
-            "id": 4,
+            "id": 2,
             "name": "glasses2-primary",
             "file": "glasses2-primary.svg"
-        },
-        {
-            "id": 5,
-            "name": "glasses2-secondary",
-            "file": "glasses2-secondary.svg"
         }
     ],
     "jerseys": [
         {
             "id": 0,
-            "name": "baseball",
-            "file": "baseball.svg"
-        },
-        {
-            "id": 1,
-            "name": "baseball2",
-            "file": "baseball2.svg"
-        },
-        {
-            "id": 2,
-            "name": "baseball3",
-            "file": "baseball3.svg"
-        },
-        {
-            "id": 3,
-            "name": "baseball4",
-            "file": "baseball4.svg"
-        },
-        {
-            "id": 4,
-            "name": "football",
-            "file": "football.svg"
-        },
-        {
-            "id": 5,
-            "name": "football2",
-            "file": "football2.svg"
-        },
-        {
-            "id": 6,
-            "name": "football3",
-            "file": "football3.svg"
-        },
-        {
-            "id": 7,
-            "name": "football4",
-            "file": "football4.svg"
-        },
-        {
-            "id": 8,
-            "name": "football5",
-            "file": "football5.svg"
-        },
-        {
-            "id": 9,
-            "name": "hockey",
-            "file": "hockey.svg"
-        },
-        {
-            "id": 10,
-            "name": "hockey2",
-            "file": "hockey2.svg"
-        },
-        {
-            "id": 11,
-            "name": "hockey3",
-            "file": "hockey3.svg"
-        },
-        {
-            "id": 12,
-            "name": "hockey4",
-            "file": "hockey4.svg"
-        },
-        {
-            "id": 13,
             "name": "jersey",
             "file": "jersey.svg"
-        },
-        {
-            "id": 14,
-            "name": "jersey2",
-            "file": "jersey2.svg"
-        },
-        {
-            "id": 15,
-            "name": "jersey3",
-            "file": "jersey3.svg"
-        },
-        {
-            "id": 16,
-            "name": "jersey4",
-            "file": "jersey4.svg"
-        },
-        {
-            "id": 17,
-            "name": "jersey5",
-            "file": "jersey5.svg"
         }
     ],
     "eye_lines": [
@@ -1357,28 +672,6 @@
             "id": 5,
             "name": "line6",
             "file": "line6.svg"
-        }
-    ],
-    "smile_lines": [
-        {
-            "id": 0,
-            "name": "line1",
-            "file": "line1.svg"
-        },
-        {
-            "id": 1,
-            "name": "line2",
-            "file": "line2.svg"
-        },
-        {
-            "id": 2,
-            "name": "line3",
-            "file": "line3.svg"
-        },
-        {
-            "id": 3,
-            "name": "line4",
-            "file": "line4.svg"
         }
     ],
     "misc_lines": [
