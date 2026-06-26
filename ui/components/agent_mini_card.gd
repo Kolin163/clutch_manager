@@ -39,7 +39,12 @@ func setup(data: Dictionary) -> void:
 	
 	var app = data.get("appearance", {})
 	if portrait:
-		portrait.setup(app, data.get("role", "entry"))
+		var team_color = data.get("team_color", "#424242")
+		# Если это игрок из нашего ростера (агент_мини_кард используется и там, и на рынке)
+		if RosterManager.get_player_by_id(data["id"]).size() > 0:
+			team_color = GameManager.player_team_data.get("color", "#1E88E5")
+			
+		portrait.setup(app, data.get("role", "entry"), team_color)
 
 func set_selected(is_selected: bool) -> void:
 	var style := StyleBoxFlat.new()

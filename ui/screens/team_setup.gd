@@ -79,4 +79,5 @@ func _on_back_pressed() -> void:
 func _on_next_pressed() -> void:
 	GameManager.player_team_data["name"] = name_input.text.strip_edges()
 	GameManager.player_team_data["logo"] = "res://icon.svg" # Пока одна иконка на всех
+	GameManager.player_team_data["color"] = "#1E88E5" # Синий цвет по умолчанию для команды игрока
 	get_tree().change_scene_to_file("res://ui/screens/roster_select.tscn")

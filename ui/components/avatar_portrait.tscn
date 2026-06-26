@@ -1,8 +1,22 @@
-[gd_scene format=3 uid="uid://br0g5s0bpgn2q"]
+[gd_scene format=3 uid="uid://47547tg1qsqd"]
 
 [ext_resource type="Script" uid="uid://dyoduh628rgku" path="res://ui/components/avatar_portrait.gd" id="1_xxx"]
+[ext_resource type="Texture2D" uid="uid://buojpa8bcrxti" path="res://assets/avatars/body/body.svg" id="2_body"]
+[ext_resource type="Texture2D" uid="uid://wjcqwjpmrwvg" path="res://assets/avatars/hairBg/longHair.svg" id="2_e7biv"]
+[ext_resource type="Texture2D" uid="uid://bw71v4l0bv802" path="res://assets/avatars/jersey/jersey.svg" id="3_jersey"]
+[ext_resource type="Texture2D" uid="uid://xbilrvdsqku3" path="res://assets/avatars/ear/ear3.svg" id="5_53hvb"]
+[ext_resource type="Texture2D" uid="uid://bm6cxn6v78w01" path="res://assets/avatars/head/head6.svg" id="6_bqudn"]
+[ext_resource type="Texture2D" uid="uid://vgm610ldw7ev" path="res://assets/avatars/miscLine/forehead1.svg" id="7_e7biv"]
+[ext_resource type="Texture2D" uid="uid://c0ktiepk7075h" path="res://assets/avatars/eyeLine/line6.svg" id="7_eyeline"]
+[ext_resource type="Texture2D" uid="uid://dwrs5prf8ht7t" path="res://assets/avatars/mouth/mouth3.svg" id="8_53hvb"]
+[ext_resource type="Texture2D" uid="uid://bhr18lg0w7v2s" path="res://assets/avatars/eye/eye19.svg" id="10_53hvb"]
+[ext_resource type="Texture2D" uid="uid://d4my4iwagguad" path="res://assets/avatars/eyebrow/eyebrow1.svg" id="12_brow"]
+[ext_resource type="Texture2D" uid="uid://h6qqabbulbsh" path="res://assets/avatars/hair/spike.svg" id="13_bqudn"]
+[ext_resource type="Texture2D" uid="uid://djblgbvhwrlb8" path="res://assets/avatars/nose/nose1.svg" id="13_nose"]
+[ext_resource type="Texture2D" uid="uid://bstlxrct7krk1" path="res://assets/avatars/facialHair/beard1.svg" id="14_beard"]
+[ext_resource type="Texture2D" uid="uid://baquamvycdj05" path="res://assets/avatars/glasses/glasses2-primary.svg" id="14_ldg2j"]
 
-[node name="AvatarPortrait" type="Control" unique_id=985016769]
+[node name="AvatarPortrait" type="Control" unique_id=1653706461]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xxx")
 
-[node name="BG" type="ColorRect" parent="." unique_id=292199458]
+[node name="BG" type="ColorRect" parent="." unique_id=1232696784]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,152 +34,244 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.12, 0.15, 0.2, 1)
 
-[node name="HairBg" type="TextureRect" parent="." unique_id=323213189]
+[node name="HairBg" type="TextureRect" parent="." unique_id=1884062233]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_e7biv")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Body" type="TextureRect" parent="." unique_id=1452387671]
+[node name="Body" type="TextureRect" parent="." unique_id=615247806]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("2_body")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Jersey" type="TextureRect" parent="." unique_id=2075285525]
+[node name="Jersey" type="TextureRect" parent="." unique_id=784724974]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("3_jersey")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Head" type="TextureRect" parent="." unique_id=1771619172]
+[node name="EarL" type="TextureRect" parent="." unique_id=16465623]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = -34.5
+offset_right = -184.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_53hvb")
+stretch_mode = 5
+
+[node name="EarR" type="TextureRect" parent="." unique_id=1115396885]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 176.0
+offset_top = -34.5
+offset_right = 222.0
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("5_53hvb")
+stretch_mode = 5
+flip_h = true
+
+[node name="Head" type="TextureRect" parent="." unique_id=1201751592]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("6_bqudn")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Ears" type="TextureRect" parent="." unique_id=441747712]
+[node name="MiscLine" type="TextureRect" parent="." unique_id=1239165931]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("7_e7biv")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="MiscLine" type="TextureRect" parent="." unique_id=343219575]
+[node name="Mouth" type="TextureRect" parent="." unique_id=1025793657]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = 146.0
+offset_right = 25.0
+offset_bottom = 169.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("8_53hvb")
+stretch_mode = 5
+
+[node name="EyeLine" type="TextureRect" parent="." unique_id=1584635855]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -200.0
+offset_top = -347.0
+offset_right = 200.0
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_eyeline")
+stretch_mode = 5
+
+[node name="EyeL" type="TextureRect" parent="." unique_id=10391699]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = -61.0
+offset_right = 114.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_53hvb")
+stretch_mode = 5
+flip_h = true
+
+[node name="EyeR" type="TextureRect" parent="." unique_id=1739836270]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -61.0
+offset_right = -44.0
+offset_bottom = -5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_53hvb")
+stretch_mode = 5
+
+[node name="EyebrowL" type="TextureRect" parent="." unique_id=1457171116]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 48.0
+offset_top = -90.0
+offset_right = 114.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_brow")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="SmileLine" type="TextureRect" parent="." unique_id=1704278792]
+[node name="EyebrowR" type="TextureRect" parent="." unique_id=1130767214]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -90.0
+offset_right = -44.0
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_brow")
+expand_mode = 1
+stretch_mode = 5
+flip_h = true
+
+[node name="Nose" type="TextureRect" parent="." unique_id=1306551547]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_nose")
+stretch_mode = 5
+
+[node name="FacialHair" type="TextureRect" parent="." unique_id=1201099395]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("14_beard")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="Mouth" type="TextureRect" parent="." unique_id=641138379]
+[node name="Hair" type="TextureRect" parent="." unique_id=1334010365]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+texture = ExtResource("13_bqudn")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="EyeLine" type="TextureRect" parent="." unique_id=1014493101]
+[node name="Glasses" type="TextureRect" parent="." unique_id=753645141]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -39.0
+offset_bottom = -39.0
 grow_horizontal = 2
 grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Eyes" type="TextureRect" parent="." unique_id=509676509]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Eyebrows" type="TextureRect" parent="." unique_id=1110910484]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Nose" type="TextureRect" parent="." unique_id=88668134]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="FacialHair" type="TextureRect" parent="." unique_id=1095695592]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Hair" type="TextureRect" parent="." unique_id=1348379186]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-expand_mode = 1
-stretch_mode = 5
-
-[node name="Glasses" type="TextureRect" parent="." unique_id=1611127882]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+texture = ExtResource("14_ldg2j")
 expand_mode = 1
 stretch_mode = 5

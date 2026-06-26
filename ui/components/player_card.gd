@@ -57,7 +57,15 @@ func set_player_data(data: Dictionary) -> void:
 	]
 	
 	if portrait:
-		portrait.setup(data.get("appearance", {}), data.get("role", "entry"))
+		var team_color = ""
+		# Если это игрок нашей команды
+		if show_exact:
+			team_color = GameManager.player_team_data.get("color", "#1E88E5")
+		else:
+			# Для рынка/чужих агентов — нейтральный или их команды
+			team_color = data.get("team_color", "#424242")
+			
+		portrait.setup(data.get("appearance", {}), data.get("role", "entry"), team_color)
 
 func _set_exact_skill(bar: ProgressBar, val: int) -> void:
 	bar.value = val
